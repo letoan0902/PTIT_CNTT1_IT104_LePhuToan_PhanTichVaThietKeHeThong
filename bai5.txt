@@ -1,0 +1,22 @@
+BÀI 5: 3 GIAI ĐOẠN ĐẦU SDLC CHO HỆ THỐNG ĐIỂM DANH QR CODE
+
+1. PLANNING:
+- Mục tiêu: Tự động hóa điểm danh bằng QR code
+- Khả thi: 8 tháng, 500 triệu VNĐ
+- Phạm vi: Toàn trường (10,000 sinh viên)
+- Rủi ro: Bảo mật, tương thích thiết bị
+
+2. REQUIREMENT ANALYSIS:
+- Khảo sát: 20 giảng viên + 100 sinh viên
+- Yêu cầu chức năng:
+  + Giảng viên: Tạo buổi học, QR code, xem danh sách
+  + Sinh viên: Quét QR, xem lịch sử
+  + Admin: Quản lý tài khoản, báo cáo
+- Tạo SRS với 100 user stories
+
+3. SYSTEM DESIGN:
+- Kiến trúc: 3-tier (Mobile App + Backend + Database)
+- Database: 5 bảng (Users, Classes, Sessions, Attendance, QR_Codes)
+- API: 20 endpoints RESTful
+- Bảo mật: JWT, mã hóa AES-256
+- UML: Use Case, Class, Sequence

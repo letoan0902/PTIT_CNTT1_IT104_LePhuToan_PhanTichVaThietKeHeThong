@@ -1,0 +1,35 @@
+BÀI 8: PHÂN TÍCH HỆ THỐNG HỌC TRỰC TUYẾN CHO TRUNG TÂM NGOẠI NGỮ
+
+1. TÁC NHÂN VÀ CHỨC NĂNG:
+
+A. Học viên:
+- Đăng ký khóa học, tham gia học, làm bài tập
+- Xem điểm số, tương tác với giảng viên
+
+B. Giảng viên:
+- Tạo khóa học, upload tài liệu, chấm điểm
+- Theo dõi tiến độ học viên
+
+C. Admin:
+- Quản lý tài khoản, phân quyền
+- Xem báo cáo, thống kê
+
+2. PHÂN LOẠI HỆ THỐNG THÔNG TIN:
+
+- TPS: Đăng ký khóa học, thanh toán, nộp bài, chấm điểm
+- MIS: Báo cáo điểm số, thống kê học viên, doanh thu
+- DSS: Phân tích xu hướng học tập, dự báo nhu cầu khóa học
+- ESS: Dashboard tổng quan cho ban lãnh đạo
+
+3. MÔ HÌNH PHÁT TRIỂN: AGILE (Scrum) + INCREMENTAL
+
+Lý do:
+- Yêu cầu linh hoạt, cần phản hồi nhanh từ học viên
+- Sản phẩm hướng người dùng, cần học nhanh từ thị trường
+- Rủi ro thấp, có thể thử nghiệm và điều chỉnh nhanh
+
+4. 3 SƠ ĐỒ UML:
+
+- Use Case Diagram: Mô tả chức năng người dùng
+- Class Diagram: Mô tả cấu trúc dữ liệu
+- Sequence Diagram: Mô tả tương tác theo thời gian

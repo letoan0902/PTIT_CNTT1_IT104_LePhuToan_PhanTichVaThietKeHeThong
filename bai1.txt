@@ -1,0 +1,12 @@
+BÀI 1: XÁC ĐỊNH LOẠI HỆ THỐNG THÔNG TIN
+
+1. GIAO DỊCH BÁN HÀNG → TPS
+- Lý do: Xử lý giao dịch hàng ngày, ghi nhận từng đơn bán, cập nhật tồn kho
+
+2. PHÂN TÍCH XU HƯỚNG KINH DOANH → DSS  
+- Lý do: Phân tích dữ liệu, dự báo xu hướng, hỗ trợ ra quyết định chiến lược
+
+3. BẢNG TỔNG QUAN HIỆU SUẤT CHO CEO → ESS
+- Lý do: Cung cấp thông tin tổng quan, dashboard, hỗ trợ quyết định cấp cao
+
+MỐI QUAN HỆ: TPS → MIS → DSS → ESS

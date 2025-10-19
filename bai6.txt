@@ -1,0 +1,16 @@
+BÀI 6: CHỌN SƠ ĐỒ UML PHÙ HỢP
+
+A. Chức năng người dùng → USE CASE DIAGRAM
+- Mô tả các chức năng mà người dùng có thể thực hiện
+
+B. Lớp và quan hệ → CLASS DIAGRAM  
+- Mô tả cấu trúc dữ liệu, thuộc tính, phương thức
+
+C. Luồng hoạt động → ACTIVITY DIAGRAM
+- Mô tả quy trình nghiệp vụ, các bước tuần tự
+
+D. Triển khai hệ thống → DEPLOYMENT DIAGRAM
+- Mô tả cách triển khai trên máy chủ, thiết bị
+
+E. Thứ tự tương tác → SEQUENCE DIAGRAM
+- Mô tả tương tác theo thời gian giữa các đối tượng

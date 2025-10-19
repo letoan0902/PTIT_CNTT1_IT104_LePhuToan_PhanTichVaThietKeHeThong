@@ -1,0 +1,10 @@
+BÀI 2: CHỌN MÔ HÌNH PHÁT TRIỂN PHẦN MỀM
+
+DỰ ÁN A: Quản lý điểm trường cấp 2 → WATERFALL
+- Lý do: Yêu cầu rõ ràng, ổn định, cần tuân thủ quy định giáo dục
+
+DỰ ÁN B: App đặt lịch khám bệnh → AGILE (Scrum)  
+- Lý do: Yêu cầu linh hoạt, cần phản hồi nhanh từ người dùng
+
+DỰ ÁN C: Hệ thống ngân hàng điện tử → SPIRAL
+- Lý do: Rủi ro cao, phức tạp, nhiều bên liên quan, cần bảo mật nghiêm ngặt

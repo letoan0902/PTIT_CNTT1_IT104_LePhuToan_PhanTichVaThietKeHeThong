@@ -1,0 +1,30 @@
+BÀI 4: 6 GIAI ĐOẠN SDLC CHO ỨNG DỤNG ĐIỂM DANH
+
+1. PLANNING:
+- Xác định mục tiêu: Tự động hóa điểm danh
+- Phân tích khả thi: 6 tháng, chi phí hợp lý
+- Lập kế hoạch: Timeline, nhân lực, ngân sách
+
+2. ANALYSIS:
+- Khảo sát: Phỏng vấn giảng viên, sinh viên
+- Yêu cầu: Tạo QR code, quét điểm danh, xem báo cáo
+- Tạo SRS
+
+3. DESIGN:
+- Kiến trúc: Mobile App + Web Admin
+- Database: User, Class, Attendance, QR_Code
+- UML: Use Case, Class, Sequence
+
+4. IMPLEMENTATION:
+- Backend: Node.js + API
+- Mobile: React Native
+- Tích hợp các module
+
+5. TESTING:
+- Unit test, Integration test, UAT
+- Test với giảng viên, sinh viên thực tế
+
+6. DEPLOYMENT & MAINTENANCE:
+- Deploy lên App Store, Google Play
+- Đào tạo người dùng
+- Bảo trì, cập nhật

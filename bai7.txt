@@ -1,0 +1,34 @@
+BÀI 7: 6 GIAI ĐOẠN SDLC CHO HỆ THỐNG ĐĂNG KÝ TIÊM CHỦNG ONLINE
+
+1. PLANNING:
+- Mục tiêu: Tự động hóa đăng ký tiêm chủng online
+- Khả thi: 10 tháng, 800 triệu VNĐ
+- Phạm vi: Toàn trung tâm y tế
+- Rủi ro: Bảo mật dữ liệu y tế, tuân thủ quy định
+
+2. ANALYSIS:
+- Khảo sát: 50 người dân + 20 nhân viên y tế
+- Yêu cầu:
+  + Người dân: Đăng ký, xem lịch, nhận thông báo
+  + Trung tâm: Xác nhận, xếp lịch, quản lý danh sách
+  + Admin: Quản lý tài khoản, báo cáo
+
+3. DESIGN:
+- Kiến trúc: 3-tier (Web + Mobile + Backend)
+- Database: 5 bảng (Users, Vaccines, Appointments, Records, Notifications)
+- Bảo mật: Mã hóa, xác thực 2 lớp, tuân thủ y tế
+
+4. IMPLEMENTATION:
+- Backend: Node.js + API
+- Frontend: React.js (web) + React Native (mobile)
+- Tích hợp: Firebase, SMS Gateway
+
+5. TESTING:
+- Unit, Integration, System, UAT
+- Compliance testing (tuân thủ y tế)
+- Test với người dân và nhân viên y tế
+
+6. DEPLOYMENT & MAINTENANCE:
+- Deploy production, đào tạo người dùng
+- Giám sát 24/7, backup dữ liệu
+- Hỗ trợ kỹ thuật, cập nhật tính năng

@@ -1,0 +1,37 @@
+BÀI 9: PHÂN TÍCH HỆ THỐNG QUẢN LÝ ĐƠN HÀNG LOGISTIC
+
+1. TÁC NHÂN VÀ CHỨC NĂNG:
+
+A. Khách hàng:
+- Tạo đơn hàng, thanh toán, theo dõi giao hàng
+
+B. Nhân viên vận chuyển:
+- Cập nhật trạng thái giao hàng, báo cáo sự cố
+
+C. Quản lý:
+- Phân công đơn hàng, theo dõi hiệu suất, xử lý sự cố
+
+D. CEO:
+- Xem tổng quan giao dịch, vùng hoạt động, tỷ lệ giao đúng hẹn
+
+2. PHÂN LOẠI HỆ THỐNG THÔNG TIN:
+
+- TPS: Tạo đơn hàng, thanh toán, cập nhật trạng thái
+- MIS: Báo cáo hiệu suất, thống kê giao hàng, doanh thu
+- DSS: Phân tích xu hướng, tối ưu lộ trình, dự báo nhu cầu
+- ESS: Dashboard tổng quan, bản đồ vùng hoạt động
+
+3. MÔ HÌNH PHÁT TRIỂN: SPIRAL + AGILE
+
+Lý do:
+- Rủi ro cao về bảo mật, tích hợp thanh toán
+- Độ phức tạp cao, nhiều bên liên quan
+- Cần quản lý rủi ro từng giai đoạn
+- Kết hợp Agile để phát triển nhanh
+
+4. 4 SƠ ĐỒ UML:
+
+- Use Case Diagram: Chức năng người dùng
+- Class Diagram: Cấu trúc dữ liệu (Order, Customer, DeliveryStaff...)
+- Sequence Diagram: Luồng tương tác (tạo đơn, giao hàng)
+- Activity Diagram: Quy trình nghiệp vụ (xử lý đơn hàng, tối ưu lộ trình)

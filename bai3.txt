@@ -1,0 +1,23 @@
+BÀI 3: 5 THÀNH PHẦN HỆ THỐNG ĐẶT MÓN ĂN ONLINE
+
+1. CON NGƯỜI:
+- Khách hàng: Đặt món, thanh toán
+- Nhà hàng: Chuẩn bị món ăn  
+- Tài xế: Giao hàng
+- Quản trị: Quản lý hệ thống
+
+2. DỮ LIỆU:
+- Thông tin khách hàng, nhà hàng
+- Đơn hàng, thanh toán, đánh giá
+- Vị trí giao hàng, lịch sử
+
+3. QUY TRÌNH:
+- Đặt hàng → Xử lý → Giao hàng → Thanh toán → Đánh giá
+
+4. PHẦN MỀM:
+- App mobile, website, backend API
+- Hệ thống thanh toán, định vị, thông báo
+
+5. PHẦN CỨNG:
+- Server, database, smartphone
+- Thiết bị mạng, hạ tầng cloud
