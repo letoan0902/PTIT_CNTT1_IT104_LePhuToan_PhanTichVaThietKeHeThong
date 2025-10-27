@@ -1,0 +1,143 @@
+BÀI TẬP 10: BÁO CÁO HỆ THỐNG QUẢN LÝ TUYỂN DỤNG
+=================================================
+
+Vai trò: Chuyên viên phân tích hệ thống
+Dự án: Hệ thống quản lý tuyển dụng cho công ty công nghệ
+
+==================================================
+PHẦN I: CÁC YẾU TỐ MÔI TRƯỜNG HỆ THỐNG
+==================================================
+
+1. MÔI TRƯỜNG BÊN TRONG (INTERNAL ENVIRONMENT)
+----------------------------------------------
+a. Con người: HR, Hiring Manager, Dev, Ứng viên
+b. Quy trình: Đăng tin → Lọc CV → Phỏng vấn → Offer → Onboarding
+c. Công nghệ: ATS (Excel/Sheets), Email, Zoom/Meet, Database
+d. Chính sách: Đa dạng, WFH, flat structure, budget hạn chế
+
+2. MÔI TRƯỜNG BÊN NGOÀI (EXTERNAL ENVIRONMENT)
+----------------------------------------------
+a. Thị trường: Cạnh tranh FAANG/startup, thiếu nhân tài IT/AI, remote work
+b. Công nghệ: AI sourcing, video interview (HireVue), job board (LinkedIn, GitHub)
+c. Pháp lý: Luật Lao động, GDPR, không phân biệt đối xử
+d. Xã hội: Gen Z mobile-first, trọng culture/work-life balance
+e. Kinh tế: Cost per hire tối ưu, chất lượng > số lượng
+
+==================================================
+PHẦN II: PHÂN TÍCH STAKEHOLDERS
+==================================================
+
+BẢNG PHÂN LOẠI STAKEHOLDERS:
+------------------------------------------
+
+| Stakeholder          | Vai trò              | Loại              | Mối quan tâm chính                      | Power | Interest |
+|----------------------|----------------------|-------------------|------------------------------------------|-------|----------|
+| 1. Ứng viên          | Người tìm việc       | Primary           | Trải nghiệm tuyển dụng tốt, phản hồi nhanh| Thấp  | Cao      |
+| 2. HR Manager        | Quản lý tuyển dụng  | Key               | Tăng chất lượng ứng viên, giảm thời gian | Cao   | Cao      |
+| 3. Hiring Manager    | Người phỏng vấn      | Key               | Dễ đánh giá ứng viên, có đủ thông tin    | Cao   | Cao      |
+| 4. CEO               | Điều hành           | Key               | Tăng chất lượng nhân sự, ROI             | Cao   | Thấp     |
+| 5. Dev Team          | IT Developers       | Key               | Công cụ hiện đại, dễ dùng                | Cao   | Trung bình|
+| 6. Nhà cung cấp ATS  | Vendor              | External          | Bán được sản phẩm, maintenance contract   | Trung bình| Thấp   |
+| 7. Pháp lý           | Legal team          | Secondary         | Tuân thủ GDPR, Luật Lao động            | Trung bình| Trung bình|
+
+
+Chiến lược quản lý:
+- High Power, High Interest (HR Manager, Hiring Manager): Manage Closely
+- Low Power, High Interest (Ứng viên): Keep Informed
+- High Power, Low Interest (CEO): Keep Satisfied
+
+==================================================
+PHẦN III: CÁC NGUỒN YÊU CẦU
+==================================================
+
+1. NGUỒN TỪ NGƯỜI DÙNG:
+------------------------------------------
+HR Team:
+- "Chúng tôi cần một hệ thống tự động lọc CV theo từ khóa"
+- "Muốn lên lịch phỏng vấn tự động, không phải email qua lại"
+- "Cần dashboard để xem pipeline tuyển dụng"
+
+Hiring Manager:
+- "Cần xem đầy đủ thông tin ứng viên trước khi phỏng vấn"
+- "Muốn đánh giá ứng viên ngay trên hệ thống"
+
+Ứng viên:
+- "Trải nghiệm apply phải đơn giản, nhanh"
+- "Muốn nhận feedback sau phỏng vấn"
+
+2. NGUỒN TỪ QUẢN LÝ:
+------------------------------------------
+CEO:
+- "Hệ thống phải giảm thời gian tuyển dụng xuống 50%"
+- "Chất lượng ứng viên tốt hơn"
+- "Có báo cáo chi tiết về chi phí tuyển dụng"
+
+HR Director:
+- "Tuân thủ GDPR và bảo vệ dữ liệu ứng viên"
+- "Tích hợp được với ATS khác (nếu cần)"
+- "Tự động hóa onboarding sau khi tuyển dụng"
+
+3. NGUỒN TỪ ĐỐI TÁC VÀ THỨ BA:
+------------------------------------------
+Nhà cung cấp ATS:
+- "Hệ thống phải hỗ trợ API để tích hợp với LinkedIn, Indeed"
+- "Chống spam CV (filter bot submissions)"
+
+Pháp lý:
+- "Yêu cầu tuân thủ GDPR: Xóa CV sau 6 tháng"
+- "Không được lưu trữ dữ liệu nhạy cảm (CMND) không cần thiết"
+
+4. NGUỒN TỪ QUY ĐỊNH:
+------------------------------------------
+Luật An toàn thông tin:
+- "Mã hóa dữ liệu cá nhân ứng viên"
+- "Audit log cho mọi thao tác"
+
+Luật Lao động:
+- "Lưu trữ hồ sơ ứng viên tối thiểu 2 năm"
+- "Không phân biệt đối xử (giới tính, tuổi tác)"
+
+==================================================
+PHẦN IV: YÊU CẦU CHỨC NĂNG VÀ PHI CHỨC NĂNG
+==================================================
+
+A. YÊU CẦU CHỨC NĂNG (FUNCTIONAL REQUIREMENTS)
+----------------------------------------------
+
+FR-1: Quản lý ứng viên - Parse CV, lưu trữ, tìm kiếm, pipeline (New→Screening→Interview→Offer→Hired)
+FR-2: Quản lý tin - Đăng tin, multi-job board, budget
+FR-3: Sàng lọc - Auto filter CV, test online, take-home, rating
+FR-4: Lịch phỏng vấn - Calendar booking, reminder, Zoom/Meet
+FR-5: Báo cáo - Dashboard, time-to-fill, cost-per-hire, source effectiveness
+
+B. YÊU CẦU PHI CHỨC NĂNG (NON-FUNCTIONAL REQUIREMENTS)
+----------------------------------------------
+
+NFR-1: Hiệu suất - Response 2s, 1000 users, 100k CV
+NFR-2: Bảo mật - AES-256, 2FA, RBAC, GDPR, Audit
+NFR-3: Usability - Đơn giản, mobile-responsive, đa ngôn ngữ
+NFR-4: Scalable - API-first, microservices, tích hợp dễ
+NFR-5: Recovery - Backup daily, DR 4h, không mất data
+NFR-6: Availability - Uptime 99.5%, maintenance off-hours
+
+==================================================
+PHẦN V: CẤU TRÚC TÀI LIỆU MÔ TẢ YÊU CẦU
+==================================================
+
+CẤU TRÚC SRS: 1. Giới thiệu 2. Tổng quan 3. Stakeholders 4. FR (5 phần) 5. NFR (6 phần) 
+6. Giao diện 7. Use Cases (4 UC) 8. Sơ đồ 9. Ràng buộc 10. Phụ lục
+
+==================================================
+KẾT LUẬN
+==================================================
+
+Hệ thống quản lý tuyển dụng cần đáp ứng các yêu cầu trên để:
+✓ Tối ưu hóa quy trình tuyển dụng
+✓ Cải thiện trải nghiệm ứng viên
+✓ Tuân thủ pháp lý và bảo mật
+✓ Tăng hiệu quả của HR team
+✓ Cung cấp data-driven insights
+
+Công nghệ: React/React Native, Node.js/Python, PostgreSQL, AWS/Azure
+Thời gian: 6-9 tháng | Budget: $200k-$500k
+

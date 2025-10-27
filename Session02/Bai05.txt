@@ -1,0 +1,43 @@
+BÀI TẬP 5: SO SÁNH CÁC KỸ THUẬT THU THẬP YÊU CẦU
+=================================================
+
+BẢNG SO SÁNH CÁC KỸ THUẬT THU THẬP YÊU CẦU
+=================================================
+
+| Tiêu chí              | Phỏng vấn              | Quan sát               | Khảo sát               | Phân tích tài liệu     |
+|-----------------------|------------------------|------------------------|-------------------------|------------------------|
+| 1. Định nghĩa         | Trao đổi trực tiếp     | Theo dõi hoạt động     | Phát tán bảng câu hỏi   | Xem xét tài liệu có sẵn|
+|                       | với stakeholders       | thực tế tại nơi làm việc| cho nhóm lớn người dùng |                        |
+|                       |                        |                        |                        |                        |
+| 2. Khi nào sử dụng    | • Yêu cầu không rõ ràng| • Hiểu quy trình thực tế| • Nhóm lớn stakeholders | • Có tài liệu sẵn      |
+|                       | • Cần giải thích chi tiết| • Cần hiểu bối cảnh    | • Cần dữ liệu định lượng| • Xác minh yêu cầu     |
+|                       | • Có chuyên môn cao    |                        | • Yêu cầu đơn giản      |                        |
+|                       |                        |                        |                        |                        |
+| 3. Ưu điểm            | ✓ Thông tin sâu sắc    | ✓ Thông tin chính xác  | ✓ Nhanh chóng           | ✓ Dễ truy cập           |
+|                       | ✓ Giải quyết vấn đề    | ✓ Phát hiện yêu cầu   | ✓ Dễ phân tích          | ✓ Chính xác, khách quan|
+|                       | ngay lập tức           | ẩn                     | ✓ Chi phí thấp          | ✓ Tiết kiệm thời gian  |
+|                       | ✓ Linh hoạt            | ✓ Hiểu bối cảnh        |                        |                        |
+|                       |                        |                        |                        |                        |
+| 4. Nhược điểm         | ✗ Thời gian dài        | ✗ Thời gian dài        | ✗ Thông tin không sâu   | ✗ Có thể lỗi thời       |
+|                       | ✗ Tùy thuộc kỹ năng    | ✗ Giới hạn thông tin   | ✗ Khó thu thập thêm     | ✗ Khó hiểu              |
+|                       | người phỏng vấn        | ✗ Tính chủ quan        | ✗ Câu trả lời chủ quan  |                        |
+|                       | ✗ Thông tin chủ quan   |                        |                        |                        |
+|                       |                        |                        |                        |                        |
+| 5. Chi phí             | Cao (thời gian + nhân  | Cao (thời gian + nhân  | Thấp (tự động hóa)      | Thấp - Trung bình      |
+|                       | lực)                   | lực)                   |                        |                        |
+|                       |                        |                        |                        |                        |
+| 6. Số lượng stakeholders| Ít đến trung bình     | Ít đến trung bình     | Nhiều (hàng trăm)       | Không giới hạn          |
+|                       |                        |                        |                        |                        |
+| 7. Độ chi tiết         | Rất cao                | Cao                    | Thấp đến trung bình     | Tùy thuộc tài liệu     |
+|                       |                        |                        |                        |                        |
+| 8. Tính khách quan     | Chủ quan               | Chủ quan               | Chủ quan                | Khách quan              |
+
+KHI NÀO CHỌN:
+-------------------------------------------
+PHỎNG VẤN: Yêu cầu phức tạp, stakeholder chuyên môn cao, cần giải thích chi tiết
+QUAN SÁT: Cần hiểu quy trình thực tế, phát hiện yêu cầu ẩn
+KHẢO SÁT: Số lượng lớn (100+), cần dữ liệu định lượng, budget hạn chế
+PHÂN TÍCH TÀI LIỆU: Có tài liệu sẵn, nâng cấp/migration hệ thống cũ
+
+LƯU Ý: Nên kết hợp nhiều phương pháp để thu thập yêu cầu toàn diện
+

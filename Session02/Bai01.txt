@@ -1,0 +1,35 @@
+BÀI TẬP 1: PHÂN LOẠI STAKEHOLDERS
+=================================================
+
+CHỌN HỆ THỐNG: HỆ THỐNG QUẢN LÝ THƯ VIỆN
+
+BẢNG PHÂN LOẠI STAKEHOLDERS
+-------------------------------------------
+
+| Vai trò                   | Mô tả                                                                 | Ví dụ cụ thể                                                   |
+|---------------------------|----------------------------------------------------------------------|----------------------------------------------------------------|
+| 1. Người dùng cuối        | Những người trực tiếp sử dụng hệ thống hàng ngày                     | Sinh viên, giảng viên mượn sách; Nhân viên thư viện quét mã vạch|
+| 2. Sponsor                | Người tài trợ và quyết định đầu tư cho hệ thống                      | Hiệu trưởng nhà trường; Ban giám đốc tài chính; Nhà đầu tư dự án|
+| 3. Chuyên gia nghiệp vụ   | Người hiểu rõ quy trình nghiệp vụ và xác định yêu cầu chức năng      | Trưởng phòng thư viện; Người quản lý kho sách; Chuyên gia phân loại|
+| 4. Bộ phận kỹ thuật       | Đội ngũ phát triển, triển khai và bảo trì hệ thống                   | Lập trình viên phần mềm; Admin hệ thống; Kỹ thuật viên IT; Kiểm thử viên|
+| 5. Bên thứ ba             | Các tổ chức/cá nhân bên ngoài liên quan đến hệ thống                 | Nhà cung cấp phần mềm; Nhà cung cấp mã vạch; Cơ quan kiểm định; Luật sư về bản quyền|
+
+CHI TIẾT PHÂN LOẠI:
+-------------------------------------------
+
+1. NGƯỜI DÙNG CUỐI: Sinh viên, giảng viên, nhân viên thư viện
+2. SPONSOR: Ban giám đốc, phòng tài chính, nhà đầu tư
+3. CHUYÊN GIA NGHIỆP VỤ: Trưởng phòng, quản lý kho, chuyên gia phân loại
+4. BỘ PHẬN KỸ THUẬT: Lập trình viên, admin, kiểm thử viên, IT support
+5. BÊN THỨ BA: Nhà cung cấp phần mềm/thiết bị, cơ quan kiểm định, luật sư
+
+STAKEGOLDER MATRIX (Ma trận ảnh hưởng - quan tâm):
+-------------------------------------------
+| Stakeholder                | Influence (Ảnh hưởng) | Interest (Quan tâm) | Chiến lược quản lý                        |
+|----------------------------|----------------------|---------------------|-------------------------------------------|
+| Ban giám đốc                | Cao                  | Thấp                | Giữ thông tin (Keep Satisfied)            |
+| Trưởng phòng thư viện      | Cao                  | Cao                 | Quản lý chặt chẽ (Manage Closely)         |
+| Sinh viên                   | Thấp                 | Cao                 | Giữ thông tin (Keep Informed)             |
+| Lập trình viên             | Cao                  | Cao                 | Quản lý chặt chẽ (Manage Closely)         |
+| Nhà cung cấp phần mềm      | Thấp                 | Thấp                | Giám sát tối thiểu (Monitor)              |
+

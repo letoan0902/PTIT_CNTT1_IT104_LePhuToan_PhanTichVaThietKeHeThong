@@ -1,0 +1,33 @@
+BÀI TẬP 4: CẤU TRÚC TÀI LIỆU SRS CHO HỆ THỐNG HỌC TRỰC TUYẾN
+=================================================
+
+HỆ THỐNG: HỆ THỐNG HỌC TRỰC TUYẾN (E-LEARNING SYSTEM)
+
+CẤU TRÚC TÀI LIỆU SRS (SOFTWARE REQUIREMENTS SPECIFICATION)
+=================================================
+
+1. MỤC LỤC (TABLE OF CONTENTS)
+   Vai trò: Liệt kê các phần và số trang, giúp người đọc dễ dàng tìm kiếm thông tin
+
+2. TỔNG QUAN VỀ TÀI LIỆU (DOCUMENT OVERVIEW)
+   a. Mục đích tài liệu:
+      - Giải thích mục tiêu của tài liệu SRS
+      - Xác định đối tượng đọc tài liệu (developers, testers, PM)
+   
+   b. Phạm vi dự án:
+      - Xác định phạm vi: Hệ thống học trực tuyến cho trường đại học
+      - Đối tượng sử dụng: Sinh viên, giảng viên, quản trị viên
+
+3. GIỚI THIỆU TỔNG QUAN: Mục đích hệ thống, định nghĩa, từ viết tắt
+4. MÔ TẢ TỔNG QUAN: Quan điểm hệ thống, kiến trúc (Frontend/Backend), ràng buộc
+5. TÀI LIỆU THAM KHẢO: Các tiêu chuẩn, luật liên quan
+6. MÔI TRƯỜNG: Phần cứng, phần mềm, hệ thống bên thứ ba
+7. YÊU CẦU CHỨC NĂNG: Đăng nhập/đăng ký, quản lý khóa học, tham gia khóa học, forum
+8. YÊU CẦU PHI CHỨC NĂNG: Hiệu suất (5000 users, load 2s), bảo mật (SSL, 2FA), usability (responsive)
+9. GIAO DIỆN NGƯỜI DÙNG: Mockup các màn hình chính
+10. GIAO DIỆN NGOÀI: Web/mobile app, API, webhook, camera/microphone
+11. KỊCH BẢN SỬ DỤNG: UC sinh viên, giảng viên, admin
+12. RÀNG BUỘC: Luật giáo dục, GDPR, budget
+13. SƠ ĐỒ: DFD, ERD, UML Use Case
+14. PHỤ LỤC: Glossary, dữ liệu mẫu, change log
+

@@ -1,0 +1,119 @@
+BÀI TẬP 9: ĐỀ CƯƠNG TÀI LIỆU SRS CHO HỆ THỐNG ĐẶT MÓN ĂN TẠI NHÀ HÀNG
+=================================================
+
+HỆ THỐNG: ĐẶT MÓN ĂN TẠI QUÁN (IN-RESTAURANT ORDERING SYSTEM)
+
+ĐỀ CƯƠNG TÀI LIỆU SRS
+=================================================
+
+PHẦN I: GIỚI THIỆU
+-------------------------------------------
+
+1.1-1.4: Mục đích, phạm vi, đối tượng, định nghĩa - Xác định yêu cầu, người dùng, thuật ngữ
+
+PHẦN II: MÔ TẢ TỔNG QUAN
+-------------------------------------------
+
+2.1-2.3: Tổng quan, kiến trúc, ràng buộc - Tablet app, KDS, backend, DB; Android, WiFi
+
+PHẦN III: YÊU CẦU CHỨC NĂNG
+-------------------------------------------
+
+3.1-3.7: Đăng nhập/phân quyền, quản lý menu, đặt món (QR), quản lý đơn, KDS, thanh toán, quản lý bàn
+
+PHẦN IV: YÊU CẦU PHI CHỨC NĂNG
+-------------------------------------------
+
+4.1-4.5: Hiệu suất (load 5s, 50 bàn, 99.5%), bảo mật (mã hóa, log), usability (dễ dùng, đa ngôn ngữ), maintainable (code rõ), scalable (modular, API)
+
+PHẦN V: GIAO DIỆN NGƯỜI DÙNG
+-------------------------------------------
+
+5.1 MOCKUP MÀN HÌNH KHÁCH HÀNG
+Mục đích: Hiển thị giao diện cho khách hàng đặt món
+Giải thích: Mockup màn hình chọn món, giỏ hàng, thanh toán
+
+5.2 MOCKUP MÀN HÌNH NHÂN VIÊN
+Mục đích: Hiển thị giao diện quản lý cho nhân viên
+Giải thích: Dashboard, quản lý đơn hàng, quản lý menu
+
+5.3 MOCKUP MÀN HÌNH KDS (BẾP)
+Mục đích: Hiển thị giao diện cho đầu bếp
+Giải thích: Danh sách đơn, chi tiết món, timer, complete button
+
+PHẦN VI: GIAO DIỆN VỚI HỆ THỐNG NGOÀI
+-------------------------------------------
+
+6.1 GIAO DIỆN PHẦN MỀM
+Mục đích: Xác định cách hệ thống tương tác với hệ thống khác
+Giải thích: API RESTful cho tích hợp POS, payment gateway (Stripe, Paypal)
+
+6.2 GIAO DIỆN PHẦN CỨNG
+Mục đích: Xác định thiết bị cần thiết
+Giải thích: Tablet Android, printer hóa đơn, QR code scanner (option)
+
+PHẦN VII: KỊCH BẢN SỬ DỤNG
+-------------------------------------------
+
+7.1 USE CASE: KHÁCH HÀNG ĐẶT MÓN
+Mục đích: Mô tả quy trình đặt món của khách hàng
+Giải thích: Khách → Quét QR → Chọn món → Thanh toán → Nhận món
+
+7.2 USE CASE: NHÂN VIÊN QUẢN LÝ ĐƠN
+Mục đích: Mô tả quy trình nhân viên xử lý đơn
+Giải thích: Nhân viên kiểm tra đơn mới → Chuyển xuống bếp → Cập nhật trạng thái
+
+7.3 USE CASE: ĐẦU BẾP NẤU MÓN
+Mục đích: Mô tả quy trình đầu bếp thực hiện đơn
+Giải thích: Đầu bếp nhận đơn → Nấu món → Đánh dấu hoàn thành → Nhân viên lấy phục vụ
+
+PHẦN VIII: SƠ ĐỒ VÀ MÔ HÌNH
+-------------------------------------------
+
+8.1 SƠ ĐỒ LUỒNG DỮ LIỆU
+Mục đích: Mô tả luồng thông tin trong hệ thống
+Giải thích: Khách đặt món → Server → Bếp → Trả về trạng thái
+
+8.2 SƠ ĐỒ QUAN HỆ CƠ SỞ DỮ LIỆU (ERD)
+Mục đích: Mô tả cấu trúc database
+Giải thích: Bảng User, Table, Menu, Order, OrderDetail, Payment
+
+8.3 UML DIAGRAM
+Mục đích: Mô tả cấu trúc hệ thống
+Giải thích: Use Case Diagram, Class Diagram, Sequence Diagram
+
+PHẦN IX: RÀNG BUỘC VÀ GIẢ ĐỊNH
+-------------------------------------------
+
+9.1 RÀNG BUỘC KỸ THUẬT
+Mục đích: Xác định hạn chế về công nghệ
+Giải thích: Dùng Android tablet, kết nối WiFi, có backup power
+
+9.2 RÀNG BUỘC NGHIỆP VỤ
+Mục đích: Xác định quy tắc nghiệp vụ
+Giải thích: Tuân thủ quy định thuế, in hóa đơn GTGT
+
+9.3 GIẢ ĐỊNH
+Mục đích: Liệt kê các điều kiện đã được cho là đúng
+Giải thích: WiFi ổn định, nhân viên được training, tablet được bảo trì
+
+PHẦN X: PHỤ LỤC
+-------------------------------------------
+
+10.1 GLOSSARY (BẢNG CHÚ GIẢI)
+Mục đích: Giải thích các thuật ngữ chuyên ngành
+Giải thích: KDS, POS, QR code, Escrow, Menu item, Combo meal
+
+10.2 DỮ LIỆU MẪU
+Mục đích: Cung cấp dữ liệu test cho developers
+Giải thích: Danh sách món mẫu, user mẫu, đơn hàng mẫu
+
+10.3 CHANGE LOG
+Mục đích: Ghi lại lịch sử thay đổi tài liệu
+Giải thích: Version 1.0 - Ngày tạo, Version 1.1 - Thêm tính năng thanh toán QR
+
+TỔNG KẾT
+=================================================
+Đề cương này cung cấp cấu trúc hoàn chỉnh cho tài liệu SRS, giúp developers, testers 
+và stakeholders hiểu rõ yêu cầu và phạm vi của hệ thống đặt món ăn tại quán.
+

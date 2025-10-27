@@ -1,0 +1,65 @@
+BÀI TẬP 6: HỆ THỐNG QUẢN LÝ BỆNH VIỆN
+=================================================
+
+CÁC YẾU TỐ MÔI TRƯỜNG ẢNH HƯỞNG VÀ TÁC ĐỘNG ĐẾN YÊU CẦU KỸ THUẬT
+=================================================
+
+1. YẾU TỐ CÔNG NGHỆ
+-------------------------------------------
+Mô tả: Sự phát triển công nghệ y tế, hệ thống điện tử, AI, IoT
+
+• IoT thiết bị y tế → API HL7 FHIR
+• AI chẩn đoán → Xử lý ảnh X-quang, MRI
+• EHR → Chuẩn HL7, mã hóa Ansi X12
+
+2. YẾU TỐ PHÁP LÝ
+-------------------------------------------
+Mô tả: Các quy định về bảo vệ thông tin bệnh nhân, quyền riêng tư, an toàn y tế
+
+• HIPAA/GDPR → Mã hóa AES-256, MFA, Audit log
+• Lưu trữ lâu dài → Backup tự động, disaster recovery
+• Kê đơn điện tử → Ký số, blockchain
+
+3. YẾU TỐ XÃ HỘI VÀ VĂN HÓA
+-------------------------------------------
+Mô tả: Thói quen, văn hóa địa phương, xu hướng chăm sóc sức khỏe
+
+• Người cao tuổi → Giao diện đơn giản, font lớn, voice command
+• Đa ngôn ngữ → Localization, Unicode
+• Telemedicine → Video call, chat, remote monitoring
+
+4. YẾU TỐ KINH TẾ
+-------------------------------------------
+Mô tả: Budget, chi phí vận hành, tài chính bệnh viện
+
+• Budget hạn chế → Cloud, open source, scalable
+• Tối ưu chi phí → Tự động hóa quy trình
+
+5. YẾU TỐ VẬT LÝ (Hạ tầng)
+-------------------------------------------
+Mô tả: Cơ sở hạ tầng bệnh viện, mạng lưới, thiết bị
+
+• Nhiều cơ sở → Microservices, load balancing, phân tán
+• Mạng kém → Offline mode, sync data
+• Thiết bị cũ → Tương thích ngược, legacy integration
+
+6. YẾU TỐ AN NINH
+-------------------------------------------
+Mô tả: Bảo vệ dữ liệu y tế nhạy cảm, chống tấn công mạng
+
+• Tấn công mạng → IDS, security-first, backup, DR plan
+• Truy cập trái phép → RBAC, IP whitelist, encryption
+
+7. YẾU TỐ CHẤT LƯỢNG DỊCH VỤ
+-------------------------------------------
+• Giảm thời gian chờ → Real-time notifications, queue management, predictive analytics
+• Trải nghiệm bệnh nhân → Mobile app đặt lịch, thanh toán online, nhận kết quả
+
+TỔNG HỢP YÊU CẦU KỸ THUẬT CHÍNH
+=================================================
+
+YÊU CẦU CHỨC NĂNG: EHR, lịch khám, quản lý phòng, kê đơn, phòng mổ, IoT, báo cáo
+YÊU CẦU PHI CHỨC NĂNG: Bảo mật (AES-256, SSL, MFA, audit) | Hiệu suất (load 2s, 1000 users, 99.9%) | Scalable (microservices, LB, auto-scale) | Tương thích (HL7, IoT) | Recovery (backup 6h, DR 4h) | Usability (đơn giản, đa ngôn ngữ)
+
+VÍ DỤ: Hệ thống kê đơn điện tử → Pháp lý (ký số, blockchain) + Công nghệ (AI drug interaction) + Xã hội (mobile API, PDF)
+

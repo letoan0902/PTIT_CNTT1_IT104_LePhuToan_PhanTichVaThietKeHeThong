@@ -1,0 +1,28 @@
+BÀI TẬP 7: HỆ THỐNG "GIAO HÀNG NHANH" (FASTDELIVERY)
+=================================================
+
+BẢNG PHÂN LOẠI STAKEHOLDER (Tóm tắt):
+| Vai trò           | Mối quan tâm chính                      | Ưu tiên |
+|-------------------|------------------------------------------|---------|
+| 1. Khách hàng     | Giao nhanh, theo dõi, chất lượng SP      | MAJOR   |
+| 2. Shipper         | Thu nhập ổn, app dễ, thanh toán nhanh   | MAJOR   |
+| 3. Merchant        | Xử lý đơn nhanh, quản lý kho, báo cáo  | CRITICAL|
+| 4. CEO/CTO         | Tăng trưởng, mở rộng, cạnh tranh        | CRITICAL|
+| 5. Dev Team        | Hệ thống ổn, code maintain, monitoring  | CRITICAL|
+| 6. Nhà đầu tư      | ROI cao, scale up, thị phần             | CRITICAL|
+| 7. CSKH            | Quản lý ticket hiệu quả                  | MINOR   |
+| 8. Thanh toán      | API ổn định, bảo mật, xử lý nhanh       | MAJOR   |
+| 9. Pháp lý         | Tuân thủ quy định, an toàn lao động    | MINOR   |
+| 10. Marketing      | User behavior data, A/B testing        | MINOR   |
+
+MA TRẬN POWER & INTEREST:
+High Power, High Interest (CEO, Dev, Merchant) → Manage Closely
+Low Power, High Interest (Khách hàng, Shipper) → Keep Informed/Satisfied
+High Power, Low Interest (CEO, Investors) → Keep Satisfied
+Low Power, Low Interest → Monitor
+
+KẾT LUẬN
+=================================================
+Hệ thống FastDelivery phải đáp ứng được yêu cầu của tất cả stakeholders, 
+đặc biệt ưu tiên các stakeholder có mức độ CRITICAL để đảm bảo thành công của dự án.
+

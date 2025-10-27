@@ -1,0 +1,29 @@
+BÀI TẬP 8: QUY TRÌNH ĐẶT VÉ MÁY BAY
+=================================================
+
+MÔ TẢ QUY TRÌNH
+=================================================
+
+Tên quy trình: ĐẶT VÉ MÁY BAY TRỰC TUYẾN
+
+Người tham gia: Khách hàng, Hệ thống đặt vé, Hãng hàng không, Ngân hàng
+
+Các bước: Search → Chọn chuyến → Nhập info → Chọn dịch vụ → Thanh toán → Nhận mã booking
+
+YÊU CẦU CHỨC NĂNG (FUNCTIONAL REQUIREMENTS)
+=================================================
+
+FR-1: Tìm kiếm chuyến bay theo sân bay, ngày, hãng, giá
+FR-2: Lưu thông tin hành khách (tên, CMND, email, frequent flyer)
+FR-3: Thanh toán (thẻ, ví điện tử) + OTP xác thực + email confirm
+FR-4: Quản lý đặt chỗ (booking ref, hủy/đổi, hoàn tiền)
+
+YÊU CẦU PHI CHỨC NĂNG (NON-FUNCTIONAL REQUIREMENTS)
+=================================================
+
+NFR-1: Hiệu suất - Load 2s, search 3s, pay 30s, 50k users đồng thời
+NFR-2: Bảo mật - Mã hóa PCI DSS, HTTPS, OTP 2FA, không lưu CVV, audit log
+NFR-3: Usability - Đơn giản, đa ngôn ngữ, responsive, autocomplete, giá rõ ràng
+
+KIỂM THỬ: Chức năng (click test), Hiệu suất (load test), Bảo mật (SSL test), Usability (user test)
+

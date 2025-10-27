@@ -1,0 +1,15 @@
+BÀI TẬP 3: CÁC YẾU TỐ MÔI TRƯỜNG HỆ THỐNG
+=================================================
+
+CHỌN HỆ THỐNG: SHOPEE (Ứng dụng thương mại điện tử)
+
+CÁC YẾU TỐ MÔI TRƯỜNG HỆ THỐNG
+-------------------------------------------
+
+1. NGƯỜI DÙNG: Khách hàng, người bán, nhân viên Shopee, đội ngũ dev, CSKH
+2. PHẦN CỨNG: Server, database, network, thiết bị client (mobile, PC)
+3. PHẦN MỀM: OS (Linux, iOS, Android), app (React, Node.js, Python), DB (MySQL, Redis)
+4. HỆ THỐNG NGOÀI: Payment (Momo, VNPay), vận chuyển (GHTK, Viettel Post), Google Maps, SMS/Email
+5. QUY TRÌNH: Mua hàng (search → cart → pay), Bán hàng (đăng ký → đăng SP → xuất đơn), Quản lý (duyệt SP, CSKH)
+6. LUẬT LỆ: TMĐT, Bảo vệ người tiêu dùng, An toàn thông tin, Thuế GTGT, GDPR
+

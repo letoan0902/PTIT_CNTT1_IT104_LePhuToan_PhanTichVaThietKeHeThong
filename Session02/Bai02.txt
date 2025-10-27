@@ -1,0 +1,52 @@
+BÀI TẬP 2: PHÂN LOẠI YÊU CẦU CHỨC NĂNG VÀ PHI CHỨC NĂNG
+=================================================
+
+CHỌN HỆ THỐNG: APP NGÂN HÀNG MOBILE (TECHCOMBANK, VPBANK, v.v.)
+
+YÊU CẦU CHỨC NĂNG (Functional Requirements)
+-------------------------------------------
+Mô tả: Các hành động mà hệ thống phải thực hiện
+
+1. Chuyển khoản:
+   - Hệ thống phải cho phép người dùng chuyển khoản nội bộ và liên ngân hàng
+   - Hệ thống phải xác thực bằng OTP hoặc vân tay/Face ID
+   - Hệ thống phải lưu lại lịch sử giao dịch
+
+2. Thanh toán hóa đơn:
+   - Hệ thống phải cho phép người dùng thanh toán tiền điện, nước, internet
+   - Hệ thống phải lưu danh sách nhà cung cấp dịch vụ
+   - Hệ thống phải hiển thị hóa đơn sau khi thanh toán
+
+3. Kiểm tra số dư và lịch sử giao dịch:
+   - Hệ thống phải hiển thị số dư tài khoản chính xác theo thời gian thực
+   - Hệ thống phải cho phép xem lịch sử giao dịch theo ngày/tháng/năm
+   - Hệ thống phải hỗ trợ xuất sao kê dưới dạng PDF
+
+YÊU CẦU PHI CHỨC NĂNG (Non-functional Requirements)
+-------------------------------------------
+Mô tả: Các tiêu chuẩn chất lượng và đặc tính hệ thống
+
+1. Bảo mật:
+   - Tất cả dữ liệu người dùng phải được mã hóa SSL/TLS
+   - Hệ thống phải hỗ trợ xác thực đa nhân tố (MFA): OTP, vân tay, Face ID
+   - Thông tin thẻ và tài khoản phải được bảo vệ theo chuẩn PCI DSS
+   
+2. Hiệu suất:
+   - Thời gian tải ứng dụng không quá 3 giây
+   - Giao dịch phải được xử lý trong vòng 30 giây
+   - Hệ thống phải hỗ trợ ít nhất 10,000 người dùng đồng thời
+
+3. Khả năng sử dụng:
+   - Giao diện phải thân thiện, dễ dùng cho mọi lứa tuổi
+   - Hỗ trợ đa ngôn ngữ: Tiếng Việt, Tiếng Anh
+   - Tương thích với iOS 12+ và Android 8+
+   - Hỗ trợ chế độ dark mode và light mode
+
+SO SÁNH:
+-------------------------------------------
+| Tiêu chí | Yêu cầu chức năng       | Yêu cầu phi chức năng  |
+|----------|-------------------------|------------------------|
+| Kiểm thử | Test chức năng          | Test hiệu suất/bảo mật |
+| Tác động | Người dùng thấy rõ      | Cảm nhận gián tiếp     |
+| Ưu tiên  | Phải có để hoạt động    | Quan trọng cho chất lượng|
+
