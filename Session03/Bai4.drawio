@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
+  <diagram id="bai4" name="Bai4">
+    <mxGraphModel dx="1507" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="libBoundary" value="" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=2;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="260" y="70" width="740" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_login" value="Đăng nhập" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="libBoundary" vertex="1">
+          <mxGeometry x="160" y="120" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_search" value="Tìm sách" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="libBoundary" vertex="1">
+          <mxGeometry x="160" y="230" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_borrow" value="Mượn sách" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="libBoundary" vertex="1">
+          <mxGeometry x="450" y="40" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_return" value="Trả sách" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="libBoundary" vertex="1">
+          <mxGeometry x="400" y="400" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rpWIqDkUmcLuJVqzRLZP-1" value="Hệ thống quản lý thư viện" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="libBoundary">
+          <mxGeometry x="220" y="20" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_staff" value="Nhân viên thư viện" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="160" width="80" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_reader" value="Độc giả" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="360" width="60" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc_staff_login" style="endArrow=none;html=1;" parent="1" source="actor_staff" target="uc_login" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc_staff_borrow" style="endArrow=none;html=1;" parent="1" source="actor_staff" target="uc_borrow" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc_staff_return" style="endArrow=none;html=1;" parent="1" source="actor_staff" target="uc_return" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc_reader_login" style="endArrow=none;html=1;" parent="1" source="actor_reader" target="uc_login" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc_reader_search" style="endArrow=none;html=1;" parent="1" source="actor_reader" target="uc_search" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc_reader_borrow" style="endArrow=none;html=1;" parent="1" source="actor_reader" target="uc_borrow" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc_reader_return" style="endArrow=none;html=1;" parent="1" source="actor_reader" target="uc_return" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
