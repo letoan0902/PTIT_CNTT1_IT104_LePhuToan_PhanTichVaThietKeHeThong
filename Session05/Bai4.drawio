@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
+  <diagram id="bai4" name="Bai4_AddToCart_Loop">
+    <mxGraphModel dx="1046" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lf_user" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;participant=umlActor;" parent="1" vertex="1">
+          <mxGeometry x="77" y="140" width="16" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="lf_ui" value=":CartUI" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="130" width="120" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="lf_srv" value=":CartService" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="130" width="140" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="frame_loop" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
+          <mxGeometry x="200" y="220" width="460" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" value="chọnSảnPhẩm()" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="85" y="260" as="sourcePoint" />
+            <mxPoint x="300" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2" value="addToCart(sp)" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="300" as="sourcePoint" />
+            <mxPoint x="530" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r2" value="OK" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="340" as="sourcePoint" />
+            <mxPoint x="300" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r1" value="cậpNhậtGiỏ" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="380" as="sourcePoint" />
+            <mxPoint x="85" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="61au95-UMkSUZRHcjFgW-1" value="Người dùng" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="110" width="90" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

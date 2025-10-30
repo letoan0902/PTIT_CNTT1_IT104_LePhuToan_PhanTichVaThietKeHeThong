@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
+  <diagram id="bai6" name="Bai6_State_UserAccount">
+    <mxGraphModel dx="2145" dy="416" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="init" value="" style="ellipse;fillColor=strokeColor;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-220" y="120" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s_new" value="Mới tạo" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-87" y="110" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s_active" value="Hoạt động" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="229" y="110" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s_locked" value="Bị khóa" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="534" y="110" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s_reactive" value="Kích hoạt lại" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="860" y="110" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="final" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" parent="1" vertex="1">
+          <mxGeometry x="1153" y="120" width="26" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t0" value="/ kích hoạt" style="endArrow=classic;html=1;" parent="1" source="init" target="s_new" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" value="kíchHoạt / tạoPhiên" style="endArrow=classic;html=1;" parent="1" source="s_new" target="s_active" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" value="viPhạm / khóaTàiKhoản" style="endArrow=classic;html=1;" parent="1" source="s_active" target="s_locked" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t3" value="yêuCầuMởKhóa / xácMinh" style="endArrow=classic;html=1;" parent="1" source="s_locked" target="s_reactive" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t4" value="đóngTàiKhoản" style="endArrow=classic;html=1;" parent="1" source="s_reactive" target="final" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

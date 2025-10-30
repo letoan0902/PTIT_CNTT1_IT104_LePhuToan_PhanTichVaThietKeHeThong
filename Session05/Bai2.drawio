@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
+  <diagram id="bai2" name="Bai2_Login">
+    <mxGraphModel dx="1068" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lf_customer" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;participant=umlActor;" parent="1" vertex="1">
+          <mxGeometry x="87" y="150" width="23" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="lf_website" value=":Website" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="120" width="120" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="lf_auth" value=":AuthService" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;" parent="1" vertex="1">
+          <mxGeometry x="480" y="120" width="120" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="act_web" value="" style="rounded=0;html=1;fillColor=#eeeeee;" parent="1" vertex="1">
+          <mxGeometry x="318" y="190" width="10" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="act_auth" value="" style="rounded=0;html=1;fillColor=#eeeeee;" parent="1" vertex="1">
+          <mxGeometry x="538" y="250" width="10" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" value="nhậpThôngTin()" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="95" y="220" as="sourcePoint" />
+            <mxPoint x="320" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2" value="verify(email, password)" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="260" as="sourcePoint" />
+            <mxPoint x="540" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r1" value="OK" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="330" as="sourcePoint" />
+            <mxPoint x="330" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r2" value="hiểnThịTrangCáNhân" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="380" as="sourcePoint" />
+            <mxPoint x="95" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a1" value="logAsync()" style="endArrow=open;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="420" as="sourcePoint" />
+            <mxPoint x="540" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RbcLYg-mnQyhiA3H0aFD-2" value="Khách hàng" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="58.5" y="120" width="80" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
+  <diagram id="bai7" name="Bai7_State_Order">
+    <mxGraphModel dx="3364" dy="935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="init" value="" style="ellipse;fillColor=strokeColor;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-530" y="143" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s_new" value="Tạo mới" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-380" y="133" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s_wait" value="Chờ thanh toán" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-60" y="133" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s_ship" value="Đang giao" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="133" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s_done" value="Hoàn thành" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="670" y="133" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s_cancel" value="Hủy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6e6;strokeColor=#cc0000;" parent="1" vertex="1">
+          <mxGeometry x="-50" y="320" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="final" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" parent="1" vertex="1">
+          <mxGeometry x="916" y="140" width="26" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t0" value="/ tạoĐơn" style="endArrow=classic;html=1;" parent="1" source="init" target="s_new" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" value="submit / tạoHoáĐơn" style="endArrow=classic;html=1;" parent="1" source="s_new" target="s_wait" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" value="paySuccess / xácNhậnThanhToán" style="endArrow=classic;html=1;" parent="1" source="s_wait" target="s_ship" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t3" value="payFailed [thanhToánThấtBại] / huỷĐơn" style="endArrow=classic;html=1;" parent="1" source="s_wait" target="s_cancel" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t4" value="delivered / cậpNhậtHoànThành" style="endArrow=classic;html=1;" parent="1" source="s_ship" target="s_done" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t5" value="/ kết thúc" style="endArrow=classic;html=1;" parent="1" source="s_done" target="final" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

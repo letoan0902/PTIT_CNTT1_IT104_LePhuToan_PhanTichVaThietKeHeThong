@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
+  <diagram id="bai8" name="Bai8_State_Product">
+    <mxGraphModel dx="2486" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="init" value="" style="ellipse;fillColor=strokeColor;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-100" y="140" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s_wait" value="Chờ nhập kho" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="130" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s_in" value="Còn hàng" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="130" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s_out" value="Hết hàng" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="660" y="130" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s_stop" value="Ngừng kinh doanh" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6e6;strokeColor=#cc0000;" parent="1" vertex="1">
+          <mxGeometry x="337" y="240" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="final" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" parent="1" vertex="1">
+          <mxGeometry x="670" y="247" width="26" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t0" value="/ nhậpKho" style="endArrow=classic;html=1;" parent="1" source="init" target="s_wait" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" value="đãNhậpKho / cậpNhậtTồn" style="endArrow=classic;html=1;" parent="1" source="s_wait" target="s_in" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" value="bánHết [tồn=0]" style="endArrow=classic;html=1;" parent="1" source="s_in" target="s_out" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t3" value="nhậpThêm [tồn&gt;0]" style="endArrow=classic;html=1;" parent="1" source="s_out" target="s_in" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t4" value="ngừngBán / gỡDanhMục" style="endArrow=classic;html=1;" parent="1" source="s_in" target="s_stop" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t5" value="/ kết thúc" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="s_stop" target="final" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

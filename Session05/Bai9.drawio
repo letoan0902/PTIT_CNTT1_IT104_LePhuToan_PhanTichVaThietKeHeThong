@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
+  <diagram id="bai9" name="Bai9_OrderSequence">
+    <mxGraphModel dx="1549" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lf_customer" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;participant=umlActor;" parent="1" vertex="1">
+          <mxGeometry x="67" y="80" width="16" height="610" as="geometry" />
+        </mxCell>
+        <mxCell id="lf_site" value=":Website" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;" parent="1" vertex="1">
+          <mxGeometry x="220" y="80" width="120" height="610" as="geometry" />
+        </mxCell>
+        <mxCell id="lf_order" value=":OrderService" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="80" width="140" height="610" as="geometry" />
+        </mxCell>
+        <mxCell id="lf_pay" value=":Payment" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;" parent="1" vertex="1">
+          <mxGeometry x="660" y="80" width="130" height="610" as="geometry" />
+        </mxCell>
+        <mxCell id="lf_mail" value=":EmailService" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;" parent="1" vertex="1">
+          <mxGeometry x="870" y="80" width="140" height="610" as="geometry" />
+        </mxCell>
+        <mxCell id="frame_loop" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
+          <mxGeometry x="200" y="160" width="360" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" value="xemSảnPhẩm()" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="75" y="220" as="sourcePoint" />
+            <mxPoint x="280" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2" value="chọnSảnPhẩm()" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="250" as="sourcePoint" />
+            <mxPoint x="510" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3" value="tạoĐơn()" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="340" as="sourcePoint" />
+            <mxPoint x="510" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r3" value="mãĐơn" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="370" as="sourcePoint" />
+            <mxPoint x="280" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="frame_alt" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
+          <mxGeometry x="200" y="390" width="560" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="m4" value="thanhToán(thôngTin)" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="430" as="sourcePoint" />
+            <mxPoint x="725" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r4" value="thànhCông" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="725" y="465" as="sourcePoint" />
+            <mxPoint x="280" y="465" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m5" value="gửiEmailXácNhận()" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="500" as="sourcePoint" />
+            <mxPoint x="940" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r5" value="đãGửi" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="940" y="530" as="sourcePoint" />
+            <mxPoint x="510" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r6" value="hiểnThịXácNhận" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="560" as="sourcePoint" />
+            <mxPoint x="75" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7" value="thấtBại" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="725" y="600" as="sourcePoint" />
+            <mxPoint x="280" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r8" value="thôngBáoLỗi" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="630" as="sourcePoint" />
+            <mxPoint x="75" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
