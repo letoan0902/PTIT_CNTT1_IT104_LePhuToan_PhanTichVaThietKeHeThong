@@ -1,0 +1,194 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
+  <diagram id="bai7" name="Bai7_Sequence_DangNhap_DatHang">
+    <mxGraphModel dx="1507" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lf_user" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;participant=umlActor;" parent="1" vertex="1">
+          <mxGeometry x="53" y="100" width="16" height="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="label_user" value="Người dùng" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="6" y="70" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lf_system" value=":Hệ thống" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;" parent="1" vertex="1">
+          <mxGeometry x="250" y="100" width="140" height="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="act_login_ui" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="lf_system" vertex="1">
+          <mxGeometry x="65" y="70" width="10" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tbJQuzKSeD1ol_2POxob-3" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="lf_system">
+          <mxGeometry x="65" y="240" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tbJQuzKSeD1ol_2POxob-4" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="lf_system">
+          <mxGeometry x="65" y="360" width="10" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="tbJQuzKSeD1ol_2POxob-5" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="lf_system">
+          <mxGeometry x="65" y="590" width="10" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="lf_database" value=":Cơ sở dữ liệu" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;" parent="1" vertex="1">
+          <mxGeometry x="480" y="100" width="150" height="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="act_dangnhap_db" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="lf_database" vertex="1">
+          <mxGeometry x="70" y="90" width="10" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="act_search_db" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="lf_database" vertex="1">
+          <mxGeometry x="70" y="240" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="act_order_db" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="lf_database" vertex="1">
+          <mxGeometry x="70" y="420" width="10" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="act_payment_db" value="" style="html=1;points=[[0,0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="lf_database" vertex="1">
+          <mxGeometry x="70" y="780" width="10" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="tbJQuzKSeD1ol_2POxob-1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="lf_database">
+          <mxGeometry x="80" y="110" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tbJQuzKSeD1ol_2POxob-2" value="Kiểm tra" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="tbJQuzKSeD1ol_2POxob-1" parent="lf_database">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="85" y="90" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="115" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tbJQuzKSeD1ol_2POxob-6" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="lf_database">
+          <mxGeometry x="70" y="710" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lf_payment" value=":Hệ thống thanh toán" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;" parent="1" vertex="1">
+          <mxGeometry x="730" y="100" width="180" height="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="act_payment" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="lf_payment" vertex="1">
+          <mxGeometry x="85" y="670" width="10" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" value="1. dangNhap" style="endArrow=classic;html=1;exitX=0.534;exitY=0.067;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1" target="act_login_ui" source="lf_user">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="85" y="180" as="sourcePoint" />
+            <mxPoint x="310" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2" value="2. kiemTraDangNhap" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="200" as="sourcePoint" />
+            <mxPoint x="550" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r2" value="3. ketQua" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1" target="act_login_ui">
+          <mxGeometry x="0.0015" relative="1" as="geometry">
+            <mxPoint x="555" y="240" as="sourcePoint" />
+            <mxPoint x="330" y="240" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r1" value="4. thongBaoDangNhap" style="endArrow=open;dashed=1;html=1;entryX=0.603;entryY=0.123;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1" target="lf_user" source="act_login_ui">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="250" as="sourcePoint" />
+            <mxPoint x="85" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3" value="5. timKiemSanPham" style="endArrow=classic;html=1;exitX=0.603;exitY=0.211;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1" target="tbJQuzKSeD1ol_2POxob-3" source="lf_user">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="85" y="350" as="sourcePoint" />
+            <mxPoint x="310" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4" value="6. truyVanSanPham" style="endArrow=classic;html=1;" parent="1" edge="1" source="tbJQuzKSeD1ol_2POxob-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="360" as="sourcePoint" />
+            <mxPoint x="550" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r4" value="7. danhSachSanPham" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="395" as="sourcePoint" />
+            <mxPoint x="325" y="395" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r3" value="8. hienThiKetQua" style="endArrow=open;dashed=1;html=1;entryX=0.672;entryY=0.252;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1" target="lf_user" source="tbJQuzKSeD1ol_2POxob-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="400" as="sourcePoint" />
+            <mxPoint x="85" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m5" value="9. themVaoGioHang" style="endArrow=classic;html=1;exitX=0.638;exitY=0.309;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1" target="tbJQuzKSeD1ol_2POxob-4" source="lf_user">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="85" y="470" as="sourcePoint" />
+            <mxPoint x="310" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6" value="10. taoDonHang" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="532" as="sourcePoint" />
+            <mxPoint x="550" y="532" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m7" value="11. kiemTraTonKho" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="568" as="sourcePoint" />
+            <mxPoint x="550" y="568" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7" value="12. ketQuaTonKho" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="596" as="sourcePoint" />
+            <mxPoint x="325" y="596" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r6" value="13. maDonHang" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1" source="tbJQuzKSeD1ol_2POxob-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="620" as="sourcePoint" />
+            <mxPoint x="550" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r5" value="14. thongBaoDatHang" style="endArrow=open;dashed=1;html=1;entryX=0.672;entryY=0.452;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1" target="lf_user" source="tbJQuzKSeD1ol_2POxob-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="640" as="sourcePoint" />
+            <mxPoint x="85" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m8" value="15. thanhToan" style="endArrow=classic;html=1;exitX=0.638;exitY=0.499;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1" target="tbJQuzKSeD1ol_2POxob-5" source="lf_user">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="85" y="700" as="sourcePoint" />
+            <mxPoint x="320" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m9" value="16. xuLyThanhToan" style="endArrow=classic;html=1;" parent="1" edge="1" source="tbJQuzKSeD1ol_2POxob-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="780" as="sourcePoint" />
+            <mxPoint x="815" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m10" value="17. xacThucThanhToan" style="endArrow=classic;html=1;entryX=0.986;entryY=0.206;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1" target="tbJQuzKSeD1ol_2POxob-6" source="act_payment">
+          <mxGeometry x="0.001" relative="1" as="geometry">
+            <mxPoint x="730" y="820" as="sourcePoint" />
+            <mxPoint x="555" y="820" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r10" value="18. ketQuaXacThuc" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="850" as="sourcePoint" />
+            <mxPoint x="815" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r9" value="19. ketQuaThanhToan" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1" target="tbJQuzKSeD1ol_2POxob-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="815" y="870" as="sourcePoint" />
+            <mxPoint x="320" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m11" value="20. capNhatTrangThaiDon" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="922" as="sourcePoint" />
+            <mxPoint x="550" y="922" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r11" value="21. thongBaoThanhToan" style="endArrow=open;dashed=1;html=1;entryX=0.603;entryY=0.717;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1" target="lf_user" source="tbJQuzKSeD1ol_2POxob-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="960" as="sourcePoint" />
+            <mxPoint x="85" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
