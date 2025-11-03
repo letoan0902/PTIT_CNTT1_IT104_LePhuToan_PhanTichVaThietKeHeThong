@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
+  <diagram name="Bai01_KienTrucTongThe" id="bai01">
+    <mxGraphModel dx="1489" dy="2001" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="client_layer" value="" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="351" y="-110" width="470" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="web_app" value="Web Application&#xa;(React/Angular)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="402" y="-60" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mobile_app" value="Mobile Application&#xa;(React Native/Flutter)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="602" y="-60" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="api_gateway" value="API GATEWAY&#xa;(Authentication, Routing)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="391" y="40" width="440" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="backend_layer" value="" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="190" y="170" width="830" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="product_service" value="Product Service" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="211" y="270" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cart_service" value="Cart Service" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="371" y="270" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="order_service" value="Order Service" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="531" y="270" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_service" value="Payment Service" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="691" y="270" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="user_service" value="User Service" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="851" y="270" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="data_layer" value="" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="220" y="470" width="800" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="postgres" value="PostgreSQL&#xa;MySQL" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="309" y="575" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="redis" value="Redis Cache" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="529" y="575" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="file_storage" value="File Storage" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="749" y="575" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="external_layer" value="" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="220" y="750" width="800" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="vnpay" value="VNPay Gateway" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="309" y="830" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="shipping" value="Shipping Service" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="479" y="830" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="email_sms" value="Email/SMS Service" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="649" y="830" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="notification" value="Notification Service" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="819" y="830" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="conn1" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="web_app" target="api_gateway" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn2" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="mobile_app" target="api_gateway" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn3" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="api_gateway" target="product_service" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn4" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="api_gateway" target="cart_service" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn5" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="api_gateway" target="order_service" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn6" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="product_service" target="postgres" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn7" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="order_service" target="postgres" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn8" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="payment_service" target="vnpay" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn9" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="order_service" target="shipping" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn10" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="payment_service" target="email_sms" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gCKnZbdKnUeKEWpfIuPP-1" value="&lt;span style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;EXTERNAL SERVICES&lt;/span&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="760" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gCKnZbdKnUeKEWpfIuPP-2" value="&lt;span style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;DATA LAYER&lt;/span&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="480" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gCKnZbdKnUeKEWpfIuPP-3" value="&lt;span style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;BACKEND SERVICES&lt;/span&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="180" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gCKnZbdKnUeKEWpfIuPP-4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;CLIENT LAYER&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="532" y="-100" width="130" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
