@@ -1,0 +1,6 @@
+Tình huống | Kiểu quan hệ | Mô tả & Lý do
+--- | --- | ---
+Một sinh viên có một mã sinh viên duy nhất | 1-1 | Mỗi Student có đúng một StudentCode duy nhất; mỗi mã chỉ thuộc về một sinh viên.
+Một khách hàng có thể đặt nhiều đơn hàng | 1-N | Một Customer có nhiều Order; mỗi Order thuộc về đúng một Customer (FK customer_id).
+Một sinh viên có thể học nhiều môn học, và mỗi môn có nhiều sinh viên | N-N | Student ↔ Course là nhiều–nhiều; cần bảng trung gian Enrollment(StudentID, CourseID, ...).
+

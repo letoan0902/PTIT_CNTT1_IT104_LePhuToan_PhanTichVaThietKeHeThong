@@ -1,0 +1,82 @@
+Chuẩn hóa dữ liệu từ 1NF → 2NF → 3NF
+
+1) Dữ liệu ban đầu (chưa chuẩn hóa)
+Mã hóa đơn | Tên khách hàng | Số điện thoại | Danh sách sản phẩm | Tổng tiền
+--- | --- | --- | --- | ---
+HD001 | An | 0912345678 | Bút bi, Vở, Thước | 50,000
+HD002 | Bình | 0987654321 | Sách, Bút chì | 80,000
+
+2) 1NF — Tách giá trị lặp (mỗi ô là đơn trị)
+- Bảng Order(InvoiceID(PK), CustomerName, Phone, TotalAmount)
+- Bảng OrderItem(InvoiceID(FK), ProductName)
+
+Order
+InvoiceID (PK) | CustomerName | Phone | TotalAmount
+--- | --- | --- | ---
+HD001 | An | 0912345678 | 50,000
+HD002 | Bình | 0987654321 | 80,000
+
+OrderItem
+InvoiceID (FK) | ProductName
+--- | ---
+HD001 | Bút bi
+HD001 | Vở
+HD001 | Thước
+HD002 | Sách
+HD002 | Bút chì
+
+3) 2NF — Loại bỏ phụ thuộc một phần vào khóa (giới thiệu khóa sản phẩm, khách hàng)
+- Chuẩn hóa danh mục Sản phẩm và Khách hàng; tách bảng trung gian có khóa kép.
+- Bảng Customer(CustomerID(PK), CustomerName, Phone)
+- Bảng Product(ProductID(PK), ProductName)
+- Bảng Order(InvoiceID(PK), CustomerID(FK), TotalAmount)
+- Bảng OrderItem(InvoiceID(FK), ProductID(FK), Quantity)
+  PK(OrderItem) = (InvoiceID, ProductID)
+
+Customer
+CustomerID (PK) | CustomerName | Phone
+--- | --- | ---
+C001 | An | 0912345678
+C002 | Bình | 0987654321
+
+Product
+ProductID (PK) | ProductName
+--- | ---
+P001 | Bút bi
+P002 | Vở
+P003 | Thước
+P004 | Sách
+P005 | Bút chì
+
+Order
+InvoiceID (PK) | CustomerID (FK) | TotalAmount
+--- | --- | ---
+HD001 | C001 | 50,000
+HD002 | C002 | 80,000
+
+OrderItem
+InvoiceID (FK) | ProductID (FK) | Quantity | (PK)
+--- | --- | --- | ---
+HD001 | P001 | 1 | (InvoiceID, ProductID)
+HD001 | P002 | 1 | (InvoiceID, ProductID)
+HD001 | P003 | 1 | (InvoiceID, ProductID)
+HD002 | P004 | 1 | (InvoiceID, ProductID)
+HD002 | P005 | 1 | (InvoiceID, ProductID)
+
+4) 3NF — Loại bỏ phụ thuộc bắc cầu
+- Đảm bảo các thuộc tính không khóa không phụ thuộc lẫn nhau.
+- Di chuyển thuộc tính khách (Phone) vào bảng Customer (đã làm ở 2NF).
+- Tổng tiền thường là thuộc tính dẫn xuất (sum(OrderItem.quantity*price)): có thể tính động, không bắt buộc lưu.
+- Nếu cần lưu giá tại thời điểm bán, thêm UnitPrice vào OrderItem để tránh phụ thuộc theo thời gian.
+
+Mô hình 3NF đề xuất cuối:
+- Customer(CustomerID PK, CustomerName, Phone)
+- Product(ProductID PK, ProductName)
+- Order(InvoiceID PK, CustomerID FK, OrderDate, TotalAmount [tùy chọn, dẫn xuất])
+- OrderItem(InvoiceID FK, ProductID FK, Quantity, UnitPriceAtSale)
+  PK(OrderItem) = (InvoiceID, ProductID)
+
+Khóa chính (PK) và khóa ngoại (FK)
+- PK: Customer.CustomerID, Product.ProductID, Order.InvoiceID, OrderItem(InvoiceID, ProductID)
+- FK: Order.CustomerID → Customer.CustomerID; OrderItem.InvoiceID → Order.InvoiceID; OrderItem.ProductID → Product.ProductID
+

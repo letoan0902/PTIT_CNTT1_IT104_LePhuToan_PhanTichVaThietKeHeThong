@@ -1,0 +1,8 @@
+Tên thực thể | Miêu tả vai trò
+--- | ---
+Sách | Là đối tượng chứa thông tin chi tiết về mỗi cuốn sách như tên sách, giá, mô tả, thể loại, năm xuất bản.
+Tác giả | Lưu thông tin về tác giả: tên, tiểu sử, quốc tịch; liên kết tới các sách đã viết.
+Khách hàng | Lưu thông tin người mua: tên, số điện thoại, email, địa chỉ giao hàng.
+Đơn hàng | Đại diện cho một lần mua hàng của khách: mã đơn, ngày đặt, trạng thái, tổng tiền, liên kết tới khách hàng.
+Chi tiết đơn hàng | Liệt kê từng sản phẩm trong đơn: mã sách, số lượng, đơn giá tại thời điểm mua; liên kết tới đơn hàng và sách.
+

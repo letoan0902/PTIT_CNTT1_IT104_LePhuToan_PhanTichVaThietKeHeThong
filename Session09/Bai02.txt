@@ -1,0 +1,8 @@
+Tiêu chí | ERD (Entity Relationship Diagram) | Class Diagram (UML)
+--- | --- | ---
+Mục đích | Thiết kế cấu trúc dữ liệu, quan hệ giữa các thực thể trong CSDL | Thiết kế cấu trúc hướng đối tượng: lớp, thuộc tính, phương thức, quan hệ OO
+Thành phần chính | Entity, Attribute, Primary Key, Foreign Key, Relationship, Cardinality | Class, Attribute, Method, Association, Aggregation, Composition, Inheritance
+Cách biểu diễn mối quan hệ | Bội số 1-1, 1-N, N-N; khóa ngoại; bảng trung gian cho N-N | Association (bội số), Aggregation/Composition (quan hệ thành phần), Inheritance (kế thừa), Dependency
+Sử dụng trong giai đoạn nào của dự án | Phân tích & thiết kế CSDL; tiền đề sinh schema (DDL) | Phân tích & thiết kế hệ thống OO; tiền đề sinh code, lớp domain/ORM
+Ví dụ | Student — Enrolls — Course (Enrollment là bảng trung gian) | Class Student có method registerCourse(); Course kế thừa từ AbstractContent
+

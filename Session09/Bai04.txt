@@ -1,0 +1,20 @@
+Entity | Attribute | Kiểu dữ liệu | Vai trò
+--- | --- | --- | ---
+User | user_id (PK) | INT | Định danh duy nhất người dùng
+User | full_name | VARCHAR(100) | Tên hiển thị của người dùng
+User | email | VARCHAR(150) | Liên hệ/đăng nhập, ràng buộc duy nhất
+User | role | ENUM('student','instructor','admin') | Phân quyền trong hệ thống
+User | created_at | DATETIME | Thời điểm tạo tài khoản
+
+Course | course_id (PK) | INT | Định danh duy nhất khóa học
+Course | title | VARCHAR(200) | Tên khóa học
+Course | description | TEXT | Mô tả nội dung khóa học
+Course | instructor_id (FK->User.user_id) | INT | Liên kết giảng viên phụ trách
+Course | published_at | DATETIME | Thời điểm công bố khóa học
+
+Enrollment | enrollment_id (PK) | INT | Định danh một lần đăng ký
+Enrollment | user_id (FK->User.user_id) | INT | Người đăng ký học
+Enrollment | course_id (FK->Course.course_id) | INT | Khóa học được đăng ký
+Enrollment | enrolled_at | DATETIME | Thời điểm đăng ký
+Enrollment | status | ENUM('active','completed','cancelled') | Trạng thái theo dõi tiến độ
+
