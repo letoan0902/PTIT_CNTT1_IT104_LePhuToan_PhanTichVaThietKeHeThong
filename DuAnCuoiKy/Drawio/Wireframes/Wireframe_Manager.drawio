@@ -1,0 +1,148 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="28.2.9">
+  <diagram id="manager_wireframes" name="Manager Wireframes">
+    <mxGraphModel dx="1804" dy="996" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3200" pageHeight="3000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="frame_dashboard" value="Dashboard Quản lý" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=2;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="80" y="80" width="1200" height="900" as="geometry" />
+        </mxCell>
+        <mxCell id="header_dashboard" value="Header (Logo, Menu, Thông báo, User)" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="frame_dashboard" vertex="1">
+          <mxGeometry width="1200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sidebar_dashboard" value="Sidebar Menu" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#e1e1e1;strokeColor=#666666;align=left;verticalAlign=top;" parent="frame_dashboard" vertex="1">
+          <mxGeometry y="60" width="240" height="840" as="geometry" />
+        </mxCell>
+        <mxCell id="menu_dashboard_item" value="Dashboard&#xa;Thực đơn&#xa;Đơn hàng&#xa;Đặt bàn&#xa;Kho&#xa;Nhân viên&#xa;Báo cáo&#xa;Cài đặt" style="text;html=1;align=left;verticalAlign=top;spacingLeft=20;" parent="sidebar_dashboard" vertex="1">
+          <mxGeometry x="10" y="20" width="220" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="content_dashboard" value="" style="shape=rectangle;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" parent="frame_dashboard" vertex="1">
+          <mxGeometry x="260" y="80" width="920" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="stats_row1" value="" style="shape=rectangle;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" parent="content_dashboard" vertex="1">
+          <mxGeometry width="920" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="card_revenue" value="Doanh thu hôm nay&#xa;15,500,000đ" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="stats_row1" vertex="1">
+          <mxGeometry x="10" y="10" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="card_orders" value="Đơn hàng&#xa;45" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="stats_row1" vertex="1">
+          <mxGeometry x="240" y="10" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="card_tables" value="Bàn đang dùng&#xa;12/20" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="stats_row1" vertex="1">
+          <mxGeometry x="470" y="10" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="card_customers" value="Khách hàng&#xa;78" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="stats_row1" vertex="1">
+          <mxGeometry x="700" y="10" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="chart_revenue" value="Biểu đồ doanh thu (7 ngày)" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="content_dashboard" vertex="1">
+          <mxGeometry x="10" y="140" width="440" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="chart_bestseller" value="Món ăn bán chạy (Top 5)" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="content_dashboard" vertex="1">
+          <mxGeometry x="470" y="140" width="440" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="recent_orders" value="Đơn hàng gần đây" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="content_dashboard" vertex="1">
+          <mxGeometry x="10" y="460" width="900" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="frame_menu" value="Quản lý thực đơn" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=2;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1360" y="80" width="1200" height="900" as="geometry" />
+        </mxCell>
+        <mxCell id="header_menu" value="Header" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="frame_menu" vertex="1">
+          <mxGeometry width="1200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sidebar_menu" value="Sidebar" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#e1e1e1;strokeColor=#666666;" parent="frame_menu" vertex="1">
+          <mxGeometry y="60" width="240" height="840" as="geometry" />
+        </mxCell>
+        <mxCell id="content_menu" value="" style="shape=rectangle;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" parent="frame_menu" vertex="1">
+          <mxGeometry x="260" y="80" width="920" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="toolbar_menu" value="Thêm món mới | Tìm kiếm | Lọc theo danh mục" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="content_menu" vertex="1">
+          <mxGeometry width="920" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="table_menu" value="Bảng danh sách món ăn (ID, Tên, Danh mục, Giá, Trạng thái, Hành động)" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="content_menu" vertex="1">
+          <mxGeometry y="70" width="920" height="710" as="geometry" />
+        </mxCell>
+        <mxCell id="frame_inventory" value="Quản lý kho" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=2;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="80" y="1060" width="1200" height="900" as="geometry" />
+        </mxCell>
+        <mxCell id="header_inventory" value="Header" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="frame_inventory" vertex="1">
+          <mxGeometry width="1200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sidebar_inventory" value="Sidebar" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#e1e1e1;strokeColor=#666666;" parent="frame_inventory" vertex="1">
+          <mxGeometry y="60" width="240" height="840" as="geometry" />
+        </mxCell>
+        <mxCell id="content_inventory" value="" style="shape=rectangle;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" parent="frame_inventory" vertex="1">
+          <mxGeometry x="260" y="80" width="920" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="toolbar_inventory" value="Nhập kho | Xuất kho | Cảnh báo hết hàng" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="content_inventory" vertex="1">
+          <mxGeometry width="920" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="alerts_inventory" value="Cảnh báo nguyên liệu sắp hết (Tôm: 2kg, Bò: 5kg)" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="content_inventory" vertex="1">
+          <mxGeometry y="70" width="920" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="table_inventory" value="Bảng danh sách nguyên liệu (ID, Tên, Đơn vị, Tồn kho, Ngưỡng cảnh báo, Hành động)" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="content_inventory" vertex="1">
+          <mxGeometry y="150" width="920" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="frame_report" value="Báo cáo" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=2;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1360" y="1060" width="1200" height="900" as="geometry" />
+        </mxCell>
+        <mxCell id="header_report" value="Header" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="frame_report" vertex="1">
+          <mxGeometry width="1200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sidebar_report" value="Sidebar" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#e1e1e1;strokeColor=#666666;" parent="frame_report" vertex="1">
+          <mxGeometry y="60" width="240" height="840" as="geometry" />
+        </mxCell>
+        <mxCell id="content_report" value="" style="shape=rectangle;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" parent="frame_report" vertex="1">
+          <mxGeometry x="260" y="80" width="920" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="filter_report" value="Chọn loại báo cáo | Chọn khoảng thời gian | Xuất PDF/Excel" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="content_report" vertex="1">
+          <mxGeometry width="920" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="summary_report" value="Tổng quan (Doanh thu, Chi phí, Lợi nhuận)" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="content_report" vertex="1">
+          <mxGeometry y="70" width="920" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="chart_report" value="Biểu đồ doanh thu theo tháng" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="content_report" vertex="1">
+          <mxGeometry y="240" width="450" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="table_report" value="Bảng chi tiết giao dịch" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="content_report" vertex="1">
+          <mxGeometry x="470" y="240" width="450" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="export_report" value="Xuất báo cáo" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="content_report" vertex="1">
+          <mxGeometry x="360" y="560" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7ZSjqwofLmiMTda1ONJF-1" value="Trang chủ" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="80" y="50" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7ZSjqwofLmiMTda1ONJF-2" value="Quản lý thực dơn" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1353" y="49" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7ZSjqwofLmiMTda1ONJF-3" value="Quản lý kho" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="35" y="1030" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7ZSjqwofLmiMTda1ONJF-4" value="Trang báo cáo" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1333" y="1030" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="frame_staff" value="Quản lý nhân viên" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=2;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="80" y="2040" width="1200" height="900" as="geometry" />
+        </mxCell>
+        <mxCell id="header_staff" value="Header" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="frame_staff" vertex="1">
+          <mxGeometry width="1200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sidebar_staff" value="Sidebar" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#e1e1e1;strokeColor=#666666;" parent="frame_staff" vertex="1">
+          <mxGeometry y="60" width="240" height="840" as="geometry" />
+        </mxCell>
+        <mxCell id="content_staff" value="" style="shape=rectangle;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" parent="frame_staff" vertex="1">
+          <mxGeometry x="260" y="80" width="920" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="toolbar_staff" value="Thêm nhân viên mới | Tìm kiếm | Lọc theo vai trò" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="content_staff" vertex="1">
+          <mxGeometry width="920" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="table_staff" value="Bảng danh sách nhân viên (ID, Tên, Email, Số điện thoại, Vai trò, Trạng thái, Hành động)" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="content_staff" vertex="1">
+          <mxGeometry y="70" width="920" height="730" as="geometry" />
+        </mxCell>
+        <mxCell id="7ZSjqwofLmiMTda1ONJF-5" value="Quản lý nhân viên" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="52" y="2010" width="150" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

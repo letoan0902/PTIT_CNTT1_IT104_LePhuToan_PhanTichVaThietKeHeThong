@@ -1,0 +1,137 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.0.2">
+  <diagram id="UC02_Sequence" name="UC02_DatBan_Sequence">
+    <mxGraphModel dx="1631" dy="711" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lf_user" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;participant=umlActor;" parent="1" vertex="1">
+          <mxGeometry x="80" y="100" width="16" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="act_user" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="lf_user" vertex="1">
+          <mxGeometry x="3" y="90" width="10" height="610" as="geometry" />
+        </mxCell>
+        <mxCell id="lf_ui" value=":ReservationUI" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="100" width="150" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="act_ui1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="lf_ui" vertex="1">
+          <mxGeometry x="70" y="90" width="10" height="590" as="geometry" />
+        </mxCell>
+        <mxCell id="lf_reservation" value=":ReservationService" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;" parent="1" vertex="1">
+          <mxGeometry x="500" y="100" width="180" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="act_reservation1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="lf_reservation" vertex="1">
+          <mxGeometry x="85" y="300" width="10" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="lf_table" value=":TableService" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;" parent="1" vertex="1">
+          <mxGeometry x="780" y="100" width="140" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="act_table1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="lf_table" vertex="1">
+          <mxGeometry x="65" y="160" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="act_table3" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="lf_table" vertex="1">
+          <mxGeometry x="65" y="422" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lf_db" value=":Database" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="100" width="120" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="act_db1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="lf_db" vertex="1">
+          <mxGeometry x="55" y="346" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lf_notification" value=":NotificationService" style="shape=umlLifeline;perimeter=lifelinePerimeter;html=1;container=1;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="100" width="180" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="act_notification1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="lf_notification" vertex="1">
+          <mxGeometry x="85" y="467" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" value="1. Truy cập trang đặt bàn" style="endArrow=classic;html=1;" parent="1" source="act_user" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="200" as="sourcePoint" />
+            <mxPoint x="310" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2" value="2. Chọn ngày, giờ và số lượng người" style="endArrow=classic;html=1;" parent="1" source="act_user" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="240" as="sourcePoint" />
+            <mxPoint x="310" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3" value="3. Kiểm tra bàn trống" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="274" as="sourcePoint" />
+            <mxPoint x="845" y="274" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r3" value="4. Trả về danh sách bàn trống" style="endArrow=open;dashed=1;html=1;" parent="1" source="act_table1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="845" y="305" as="sourcePoint" />
+            <mxPoint x="320" y="305" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4" value="5. Chọn bàn từ danh sách" style="endArrow=classic;html=1;" parent="1" source="act_user" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="340" as="sourcePoint" />
+            <mxPoint x="310" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m5" value="6. Nhập thông tin liên hệ" style="endArrow=classic;html=1;" parent="1" source="act_user" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="380" as="sourcePoint" />
+            <mxPoint x="310" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6" value="7. Xác nhận đặt bàn" style="endArrow=classic;html=1;" parent="1" target="act_reservation1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="420" as="sourcePoint" />
+            <mxPoint x="590" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m8" value="8. Tạo bản ghi đặt bàn" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="595" y="456" as="sourcePoint" />
+            <mxPoint x="1075" y="456" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r8" value="9. Trả về mã đặt bàn" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1075" y="486" as="sourcePoint" />
+            <mxPoint x="590" y="486" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m9" value="10. Cập nhật trạng thái bàn thành &#39;Đã đặt&#39;" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="595" y="538" as="sourcePoint" />
+            <mxPoint x="845" y="538" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m10" value="11. Gửi thông báo xác nhận" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="595" y="581" as="sourcePoint" />
+            <mxPoint x="1325" y="581" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r10" value="12. Xác nhận đã gửi" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1325" y="616" as="sourcePoint" />
+            <mxPoint x="595" y="616" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r11" value="13. Trả về thông báo đặt bàn thành công" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="585" y="646" as="sourcePoint" />
+            <mxPoint x="320" y="646" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r12" value="14. Hiển thị kết quả đặt bàn" style="endArrow=open;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="701" as="sourcePoint" />
+            <mxPoint x="93" y="701" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_user" value="Khách hàng/Nhân viên" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="20" y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

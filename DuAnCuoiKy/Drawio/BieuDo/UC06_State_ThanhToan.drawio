@@ -1,0 +1,63 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="28.2.9">
+  <diagram id="UC06_State" name="UC06_ThanhToan_State">
+    <mxGraphModel dx="902" dy="498" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="init" value="" style="ellipse;fillColor=strokeColor;html=1;" parent="1" vertex="1">
+          <mxGeometry x="54" y="200" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="final" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" parent="1" vertex="1">
+          <mxGeometry x="894" y="327" width="26" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s_pending" value="Chờ thanh toán" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="190" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s_processing" value="Đang xử lý" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="191" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s_completed" value="Hoàn thành" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="837" y="191" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s_failed" value="Thất bại" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="320" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t0" value="Chọn đơn hàng" style="endArrow=classic;html=1;" parent="1" source="init" target="s_pending" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" value="Chọn hình thức thanh toán" style="endArrow=classic;html=1;" parent="1" source="s_pending" target="s_processing" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" value="Thanh toán thành công" style="endArrow=classic;html=1;" parent="1" source="s_processing" target="s_completed" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t3" value="" style="endArrow=classic;html=1;" parent="1" source="s_processing" target="s_failed" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+          <Array as="points">
+            <mxPoint x="490" y="250" />
+            <mxPoint x="490" y="250" />
+          </Array>
+        </mxCell>
+        <mxCell id="t4" value="In hóa đơn" style="endArrow=classic;html=1;" parent="1" source="s_completed" target="final" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t7" value="Thanh toán thất bại, thử lại" style="endArrow=classic;html=1;" parent="1" source="s_failed" target="s_processing" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+          <Array as="points">
+            <mxPoint x="360" y="340" />
+            <mxPoint x="360" y="210" />
+          </Array>
+        </mxCell>
+        <mxCell id="BEsNU6txnUJCHky1LRFG-1" value="Lỗi thanh toán" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="s_failed" target="s_pending">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="390" as="sourcePoint" />
+            <mxPoint x="450" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

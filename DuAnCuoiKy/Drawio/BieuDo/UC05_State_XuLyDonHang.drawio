@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="28.2.9">
+  <diagram id="UC05_State" name="UC05_XuLyDonHang_State">
+    <mxGraphModel dx="902" dy="498" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="init" value="" style="ellipse;fillColor=strokeColor;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="200" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="final" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" parent="1" vertex="1">
+          <mxGeometry x="360" y="327" width="26" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s_pending" value="Chờ xử lý" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="190" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s_preparing" value="Đang chế biến" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="500" y="190" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s_completed" value="Hoàn thành" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="510" y="320" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t0" value="Nhận đơn" style="endArrow=classic;html=1;" parent="1" source="init" target="s_pending" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" value="Bắt đầu chế biến" style="endArrow=classic;html=1;" parent="1" source="s_pending" target="s_preparing" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" value="Hoàn thành món" style="endArrow=classic;html=1;" parent="1" source="s_preparing" target="s_completed" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t3" value="Kết thúc" style="endArrow=classic;html=1;" parent="1" source="s_completed" target="final" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

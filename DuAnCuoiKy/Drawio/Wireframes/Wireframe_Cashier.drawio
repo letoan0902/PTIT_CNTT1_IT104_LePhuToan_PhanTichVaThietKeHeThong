@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="28.2.9">
+  <diagram id="cashier_wireframes" name="Cashier Wireframes">
+    <mxGraphModel dx="2268" dy="830" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="frame_payment" value="" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=2;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="80" y="80" width="800" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="header_payment" value="Header (Thu ngân: Nguyễn Văn A)" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="frame_payment" vertex="1">
+          <mxGeometry width="800" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="left_panel" value="" style="shape=rectangle;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" parent="frame_payment" vertex="1">
+          <mxGeometry x="20" y="80" width="360" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="search_order" value="Tìm đơn hàng (theo bàn, mã đơn)" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="left_panel" vertex="1">
+          <mxGeometry width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="order_list" value="Danh sách đơn hàng cần thanh toán" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="left_panel" vertex="1">
+          <mxGeometry y="60" width="360" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="right_panel" value="" style="shape=rectangle;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" parent="frame_payment" vertex="1">
+          <mxGeometry x="400" y="80" width="380" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="order_details" value="Chi tiết đơn hàng #102 - Bàn 8" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="right_panel" vertex="1">
+          <mxGeometry width="380" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="total_section" value="Tổng cộng: 550,000đ" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="right_panel" vertex="1">
+          <mxGeometry y="320" width="380" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_methods" value="" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="right_panel" vertex="1">
+          <mxGeometry y="420" width="380" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="cash_button" value="Tiền mặt" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="payment_methods" vertex="1">
+          <mxGeometry x="20" y="40" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="card_button" value="Thẻ" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="payment_methods" vertex="1">
+          <mxGeometry x="140" y="40" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="momo_button" value="MoMo" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="payment_methods" vertex="1">
+          <mxGeometry x="260" y="40" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ymAAyLvWgT5ORl-LyXwR-2" value="Hình thức thanh toán" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="payment_methods">
+          <mxGeometry x="116" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="print_invoice_button" value="Thanh toán &amp; In hóa đơn" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="right_panel" vertex="1">
+          <mxGeometry x="90" y="560" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ymAAyLvWgT5ORl-LyXwR-3" value="Lịch sử" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="frame_payment">
+          <mxGeometry x="692" y="13" width="90" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="frame_history" value="Lịch sử giao dịch" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=2;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="960" y="80" width="800" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="header_history" value="Header" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="frame_history" vertex="1">
+          <mxGeometry width="800" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="filter_history" value="Lọc theo ngày | Xuất báo cáo" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="frame_history" vertex="1">
+          <mxGeometry x="20" y="80" width="760" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="table_history" value="Bảng lịch sử giao dịch" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=stackLayout;" parent="frame_history" vertex="1">
+          <mxGeometry x="20" y="150" width="760" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="table_header" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;" parent="table_history" vertex="1">
+          <mxGeometry y="30" width="760" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_id" value="Mã GD" style="shape=tableCell;collapsible=0;align=center;verticalAlign=middle;" parent="table_header" vertex="1">
+          <mxGeometry width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_orderid" value="Mã Đơn" style="shape=tableCell;collapsible=0;align=center;verticalAlign=middle;" parent="table_header" vertex="1">
+          <mxGeometry x="100" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_time" value="Thời gian" style="shape=tableCell;collapsible=0;align=center;verticalAlign=middle;" parent="table_header" vertex="1">
+          <mxGeometry x="200" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_total" value="Tổng tiền" style="shape=tableCell;collapsible=0;align=center;verticalAlign=middle;" parent="table_header" vertex="1">
+          <mxGeometry x="360" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_method" value="Hình thức" style="shape=tableCell;collapsible=0;align=center;verticalAlign=middle;" parent="table_header" vertex="1">
+          <mxGeometry x="510" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_action" value="Hành động" style="shape=tableCell;collapsible=0;align=center;verticalAlign=middle;" parent="table_header" vertex="1">
+          <mxGeometry x="660" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ymAAyLvWgT5ORl-LyXwR-1" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Trang thanh toán&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="50" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ymAAyLvWgT5ORl-LyXwR-4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Lịch sử giao dịch&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="50" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

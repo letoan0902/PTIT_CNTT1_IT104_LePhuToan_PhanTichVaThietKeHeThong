@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="28.2.9">
   <diagram id="bai7" name="Bai7_State_Order">
-    <mxGraphModel dx="3364" dy="935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2230" dy="586" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -42,6 +42,15 @@
         </mxCell>
         <mxCell id="t5" value="/ kết thúc" style="endArrow=classic;html=1;" parent="1" source="s_done" target="final" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QjzdxPRqCHs_SYLSIsN2-1" value="deliveryFailed [giaoHàngThấtBại]" style="endArrow=classic;html=1;" edge="1" parent="1" source="s_ship" target="QjzdxPRqCHs_SYLSIsN2-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="200" as="sourcePoint" />
+            <mxPoint x="420" y="347" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QjzdxPRqCHs_SYLSIsN2-2" value="Hủy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6e6;strokeColor=#cc0000;" vertex="1" parent="1">
+          <mxGeometry x="340" y="310" width="140" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

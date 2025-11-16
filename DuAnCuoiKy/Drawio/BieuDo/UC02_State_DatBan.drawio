@@ -1,0 +1,77 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="28.2.9">
+  <diagram id="UC02_State" name="UC02_DatBan_State">
+    <mxGraphModel dx="1289" dy="711" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="init" value="" style="ellipse;fillColor=strokeColor;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="200" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="final" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" parent="1" vertex="1">
+          <mxGeometry x="1200" y="198" width="26" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s_new" value="Mới" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="190" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s_confirmed" value="Đã xác nhận" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="445" y="190" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s_arrived" value="Đã đến" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="692" y="190" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s_completed" value="Hoàn thành" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="954" y="190" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s_cancelled" value="Đã hủy" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="456" y="320" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t0" value="Đặt bàn" style="endArrow=classic;html=1;" parent="1" source="init" target="s_new" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" value="Gửi xác nhận" style="endArrow=classic;html=1;" parent="1" source="s_new" target="s_confirmed" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" value="Khách đến" style="endArrow=classic;html=1;" parent="1" source="s_confirmed" target="s_arrived" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t3" value="Hoàn tất bữa ăn" style="endArrow=classic;html=1;" parent="1" source="s_arrived" target="s_completed" edge="1">
+          <mxGeometry x="0.0309" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t4" value="/ kết thúc" style="endArrow=classic;html=1;" parent="1" source="s_completed" target="final" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t5" value="Hủy đặt bàn" style="endArrow=classic;html=1;" parent="1" source="s_confirmed" target="s_cancelled" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+          <Array as="points">
+            <mxPoint x="480" y="250" />
+            <mxPoint x="480" y="250" />
+          </Array>
+        </mxCell>
+        <mxCell id="t6" value="Xóa đặt bàn" style="endArrow=classic;html=1;" parent="1" source="s_new" target="s_cancelled" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="340" />
+            </Array>
+          </mxGeometry>
+          <Array as="points">
+            <mxPoint x="270" y="250" />
+            <mxPoint x="270" y="340" />
+          </Array>
+        </mxCell>
+        <mxCell id="t7" value="Kết thúc" style="endArrow=classic;html=1;" parent="1" source="s_cancelled" target="final" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1213" y="340" />
+            </Array>
+          </mxGeometry>
+          <Array as="points">
+            <mxPoint x="470" y="360" />
+            <mxPoint x="1213" y="360" />
+          </Array>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

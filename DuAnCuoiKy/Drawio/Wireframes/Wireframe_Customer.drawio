@@ -1,0 +1,111 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="28.2.9">
+  <diagram id="customer_wireframes" name="Customer Wireframes">
+    <mxGraphModel dx="1361" dy="498" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="frame_homepage" value="" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=2;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="80" y="80" width="400" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="header_home" value="Header (Logo, Menu, User)" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="frame_homepage" vertex="1">
+          <mxGeometry width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="banner_home" value="Banner quảng cáo" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="frame_homepage" vertex="1">
+          <mxGeometry y="101" width="360" height="150" as="geometry">
+            <mxPoint x="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="featured_home" value="Món ăn nổi bật" style="text;html=1;align=left;verticalAlign=middle;" parent="frame_homepage" vertex="1">
+          <mxGeometry x="20" y="250" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="item1_home" value="Món 1" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="frame_homepage" vertex="1">
+          <mxGeometry x="20" y="290" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="item2_home" value="Món 2" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="frame_homepage" vertex="1">
+          <mxGeometry x="210" y="290" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="footer_home" value="Footer (Thông tin liên hệ)" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="frame_homepage" vertex="1">
+          <mxGeometry y="640" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="frame_reservation" value="Trang đặt bàn" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=2;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="560" y="80" width="400" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="header_reservation" value="Header" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="frame_reservation" vertex="1">
+          <mxGeometry width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="input_date" value="Chọn ngày" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="frame_reservation" vertex="1">
+          <mxGeometry x="20" y="120" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="input_time" value="Chọn giờ" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="frame_reservation" vertex="1">
+          <mxGeometry x="20" y="180" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="input_guests" value="Số lượng khách" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="frame_reservation" vertex="1">
+          <mxGeometry x="20" y="240" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="map_reservation" value="Bản đồ bàn" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="frame_reservation" vertex="1">
+          <mxGeometry x="20" y="300" width="360" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="button_reservation" value="Xác nhận đặt bàn" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="frame_reservation" vertex="1">
+          <mxGeometry x="100" y="520" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="footer_reservation" value="Footer" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="frame_reservation" vertex="1">
+          <mxGeometry y="640" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="frame_menu" value="Trang thực đơn" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=2;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="80" width="400" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="header_menu" value="Header" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="frame_menu" vertex="1">
+          <mxGeometry width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="search_menu" value="Tìm kiếm món ăn" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="frame_menu" vertex="1">
+          <mxGeometry x="20" y="80" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="filter_menu" value="Lọc theo danh mục" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="frame_menu" vertex="1">
+          <mxGeometry x="20" y="140" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cart_menu" value="Giỏ hàng (0)" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="frame_menu" vertex="1">
+          <mxGeometry x="210" y="140" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="list_menu" value="Danh sách món ăn" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="frame_menu" vertex="1">
+          <mxGeometry x="20" y="200" width="360" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="footer_menu" value="Footer" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="frame_menu" vertex="1">
+          <mxGeometry y="640" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="frame_payment" value="Trang thanh toán" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=2;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1520" y="80" width="400" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="header_payment" value="Header" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="frame_payment" vertex="1">
+          <mxGeometry width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="info_payment" value="Thông tin đơn hàng" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="frame_payment" vertex="1">
+          <mxGeometry x="20" y="80" width="360" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="method_payment" value="Hình thức thanh toán" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="frame_payment" vertex="1">
+          <mxGeometry x="20" y="300" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="form_payment" value="Form nhập thông tin thẻ" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;" parent="frame_payment" vertex="1">
+          <mxGeometry x="20" y="470" width="360" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="button_payment" value="Thanh toán" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="frame_payment" vertex="1">
+          <mxGeometry x="100" y="590" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="footer_payment" value="Footer" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="frame_payment" vertex="1">
+          <mxGeometry y="640" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aVohZ_DED8BWZ5G0j2bH-2" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Trang chủ&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="77" y="47" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="form_reservation" value="Trang đặt bàn" style="text;html=1;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="560" y="50" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aVohZ_DED8BWZ5G0j2bH-3" value="Trang thực đơn" style="text;html=1;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="47" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aVohZ_DED8BWZ5G0j2bH-4" value="Thanh toán" style="text;html=1;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="1520" y="47" width="150" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,346 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" version="28.2.9">
+  <diagram id="rms_class" name="RMS_ClassDiagram">
+    <mxGraphModel dx="167" dy="92" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Package: Business Logic Layer -->
+        <mxCell id="package_business" value="Business Logic Layer" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="80" y="80" width="600" height="1200" as="geometry" />
+        </mxCell>
+        
+        <!-- Class: User -->
+        <mxCell id="class_user" value="User" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="package_business" vertex="1">
+          <mxGeometry x="20" y="40" width="560" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="user_attr_id" value="- userId: int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_user" vertex="1">
+          <mxGeometry y="30" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="user_attr_username" value="- username: String" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_user" vertex="1">
+          <mxGeometry y="60" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="user_attr_email" value="- email: String" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_user" vertex="1">
+          <mxGeometry y="90" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="user_attr_password" value="- passwordHash: String" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_user" vertex="1">
+          <mxGeometry y="120" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="user_attr_fullname" value="- fullName: String" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_user" vertex="1">
+          <mxGeometry y="150" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="user_attr_role" value="- role: Role" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_user" vertex="1">
+          <mxGeometry y="180" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="user_attr_status" value="- status: UserStatus" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_user" vertex="1">
+          <mxGeometry y="210" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="user_line" value="" style="line;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="class_user" vertex="1">
+          <mxGeometry y="240" width="560" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="user_method_login" value="+ login(username: String, password: String): boolean" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_user" vertex="1">
+          <mxGeometry y="248" width="560" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Class: Table -->
+        <mxCell id="class_table" value="Table" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="package_business" vertex="1">
+          <mxGeometry x="20" y="340" width="560" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="table_attr_id" value="- tableId: int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_table" vertex="1">
+          <mxGeometry y="30" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table_attr_number" value="- tableNumber: String" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_table" vertex="1">
+          <mxGeometry y="60" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table_attr_capacity" value="- capacity: int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_table" vertex="1">
+          <mxGeometry y="90" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table_attr_status" value="- status: TableStatus" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_table" vertex="1">
+          <mxGeometry y="120" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table_line" value="" style="line;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="class_table" vertex="1">
+          <mxGeometry y="150" width="560" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="table_method_check" value="+ checkAvailability(date: Date, time: Time): boolean" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_table" vertex="1">
+          <mxGeometry y="158" width="560" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Class: Order -->
+        <mxCell id="class_order" value="Order" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="package_business" vertex="1">
+          <mxGeometry x="20" y="560" width="560" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="order_attr_id" value="- orderId: int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_order" vertex="1">
+          <mxGeometry y="30" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="order_attr_table" value="- table: Table" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_order" vertex="1">
+          <mxGeometry y="60" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="order_attr_waiter" value="- waiter: User" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_order" vertex="1">
+          <mxGeometry y="90" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="order_attr_status" value="- status: OrderStatus" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_order" vertex="1">
+          <mxGeometry y="120" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="order_attr_details" value="- orderDetails: List&lt;OrderDetail&gt;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_order" vertex="1">
+          <mxGeometry y="150" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="order_attr_total" value="- totalAmount: BigDecimal" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_order" vertex="1">
+          <mxGeometry y="180" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="order_line" value="" style="line;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="class_order" vertex="1">
+          <mxGeometry y="210" width="560" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="order_method_create" value="+ create(): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_order" vertex="1">
+          <mxGeometry y="218" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="order_method_add" value="+ addItem(menuItem: MenuItem, quantity: int): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_order" vertex="1">
+          <mxGeometry y="248" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="order_method_calculate" value="+ calculateTotal(): BigDecimal" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_order" vertex="1">
+          <mxGeometry y="278" width="560" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Class: Payment -->
+        <mxCell id="class_payment" value="Payment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="package_business" vertex="1">
+          <mxGeometry x="20" y="880" width="560" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_attr_id" value="- paymentId: int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_payment" vertex="1">
+          <mxGeometry y="30" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_attr_order" value="- order: Order" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_payment" vertex="1">
+          <mxGeometry y="60" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_attr_method" value="- paymentMethod: PaymentMethod" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_payment" vertex="1">
+          <mxGeometry y="90" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_attr_total" value="- totalAmount: BigDecimal" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_payment" vertex="1">
+          <mxGeometry y="120" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_attr_status" value="- status: PaymentStatus" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_payment" vertex="1">
+          <mxGeometry y="150" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_line" value="" style="line;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="class_payment" vertex="1">
+          <mxGeometry y="180" width="560" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_method_process" value="+ processPayment(): boolean" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_payment" vertex="1">
+          <mxGeometry y="188" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_method_calculate" value="+ calculateTotal(): BigDecimal" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_payment" vertex="1">
+          <mxGeometry y="218" width="560" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Package: Data Access Layer -->
+        <mxCell id="package_data" value="Data Access Layer" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="720" y="80" width="500" height="600" as="geometry" />
+        </mxCell>
+        
+        <!-- Class: UserRepository -->
+        <mxCell id="class_userrepo" value="UserRepository" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="package_data" vertex="1">
+          <mxGeometry x="20" y="40" width="460" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="userrepo_line" value="" style="line;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="class_userrepo" vertex="1">
+          <mxGeometry y="30" width="460" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="userrepo_method_findbyid" value="+ findById(userId: int): User" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_userrepo" vertex="1">
+          <mxGeometry y="38" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="userrepo_method_findbyusername" value="+ findByUsername(username: String): User" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_userrepo" vertex="1">
+          <mxGeometry y="68" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="userrepo_method_save" value="+ save(user: User): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_userrepo" vertex="1">
+          <mxGeometry y="98" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="userrepo_method_update" value="+ update(user: User): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_userrepo" vertex="1">
+          <mxGeometry y="128" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="userrepo_method_delete" value="+ delete(userId: int): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_userrepo" vertex="1">
+          <mxGeometry y="158" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="userrepo_method_findall" value="+ findAll(): List&lt;User&gt;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_userrepo" vertex="1">
+          <mxGeometry y="188" width="460" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Class: OrderRepository -->
+        <mxCell id="class_orderrepo" value="OrderRepository" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="package_data" vertex="1">
+          <mxGeometry x="20" y="310" width="460" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="orderrepo_line" value="" style="line;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="class_orderrepo" vertex="1">
+          <mxGeometry y="30" width="460" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="orderrepo_method_findbyid" value="+ findById(orderId: int): Order" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_orderrepo" vertex="1">
+          <mxGeometry y="38" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="orderrepo_method_findbytable" value="+ findByTable(tableId: int): List&lt;Order&gt;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_orderrepo" vertex="1">
+          <mxGeometry y="68" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="orderrepo_method_findbystatus" value="+ findByStatus(status: OrderStatus): List&lt;Order&gt;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_orderrepo" vertex="1">
+          <mxGeometry y="98" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="orderrepo_method_save" value="+ save(order: Order): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_orderrepo" vertex="1">
+          <mxGeometry y="128" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="orderrepo_method_update" value="+ update(order: Order): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_orderrepo" vertex="1">
+          <mxGeometry y="158" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="orderrepo_method_delete" value="+ delete(orderId: int): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_orderrepo" vertex="1">
+          <mxGeometry y="188" width="460" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Package: Presentation Layer -->
+        <mxCell id="package_presentation" value="Presentation Layer" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1280" y="80" width="500" height="600" as="geometry" />
+        </mxCell>
+        
+        <!-- Class: UserController -->
+        <mxCell id="class_usercontroller" value="UserController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="package_presentation" vertex="1">
+          <mxGeometry x="20" y="40" width="460" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="usercontroller_line" value="" style="line;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="class_usercontroller" vertex="1">
+          <mxGeometry y="30" width="460" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="usercontroller_method_login" value="+ login(request: LoginRequest): LoginResponse" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_usercontroller" vertex="1">
+          <mxGeometry y="38" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="usercontroller_method_logout" value="+ logout(): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_usercontroller" vertex="1">
+          <mxGeometry y="68" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="usercontroller_method_getprofile" value="+ getProfile(): UserProfile" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_usercontroller" vertex="1">
+          <mxGeometry y="98" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="usercontroller_method_update" value="+ updateProfile(profile: UserProfile): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_usercontroller" vertex="1">
+          <mxGeometry y="128" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="usercontroller_method_changepass" value="+ changePassword(request: ChangePasswordRequest): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_usercontroller" vertex="1">
+          <mxGeometry y="158" width="460" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Class: OrderController -->
+        <mxCell id="class_ordercontroller" value="OrderController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="package_presentation" vertex="1">
+          <mxGeometry x="20" y="310" width="460" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="ordercontroller_line" value="" style="line;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="class_ordercontroller" vertex="1">
+          <mxGeometry y="30" width="460" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ordercontroller_method_create" value="+ createOrder(request: CreateOrderRequest): OrderResponse" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_ordercontroller" vertex="1">
+          <mxGeometry y="38" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ordercontroller_method_get" value="+ getOrder(orderId: int): OrderResponse" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_ordercontroller" vertex="1">
+          <mxGeometry y="68" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ordercontroller_method_add" value="+ addItemToOrder(orderId: int, request: AddItemRequest): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_ordercontroller" vertex="1">
+          <mxGeometry y="98" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ordercontroller_method_send" value="+ sendOrderToKitchen(orderId: int): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_ordercontroller" vertex="1">
+          <mxGeometry y="128" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ordercontroller_method_cancel" value="+ cancelOrder(orderId: int): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="class_ordercontroller" vertex="1">
+          <mxGeometry y="158" width="460" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Relationships -->
+        <!-- User - Order (1..* to *) -->
+        <mxCell id="rel_user_order" value="" style="endArrow=open;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" source="class_user" target="class_order" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="500" as="sourcePoint" />
+            <mxPoint x="360" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_user_order_label1" value="1..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="rel_user_order" vertex="1" connectable="0">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint x="10" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_user_order_label2" value="*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="rel_user_order" vertex="1" connectable="0">
+          <mxGeometry x="0.8" y="1" relative="1" as="geometry">
+            <mxPoint x="10" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Table - Order (1 to *) -->
+        <mxCell id="rel_table_order" value="" style="endArrow=open;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" source="class_table" target="class_order" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="540" as="sourcePoint" />
+            <mxPoint x="500" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_table_order_label1" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="rel_table_order" vertex="1" connectable="0">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint x="10" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_table_order_label2" value="*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="rel_table_order" vertex="1" connectable="0">
+          <mxGeometry x="0.8" y="1" relative="1" as="geometry">
+            <mxPoint x="10" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Order - Payment (1 to 0..1) -->
+        <mxCell id="rel_order_payment" value="" style="endArrow=open;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" source="class_order" target="class_payment" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="710" as="sourcePoint" />
+            <mxPoint x="740" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_order_payment_label1" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="rel_order_payment" vertex="1" connectable="0">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint x="10" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_order_payment_label2" value="0..1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="rel_order_payment" vertex="1" connectable="0">
+          <mxGeometry x="0.8" y="1" relative="1" as="geometry">
+            <mxPoint x="10" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Dependency: OrderController -> OrderService (not shown, but mentioned) -->
+        <mxCell id="dep_ordercontroller_service" value="&lt;&lt;uses&gt;&gt;" style="endArrow=open;dashed=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;dashed=1;" parent="1" source="class_ordercontroller" target="class_order" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1280" y="435" as="sourcePoint" />
+            <mxPoint x="640" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Dependency: Order -> OrderRepository -->
+        <mxCell id="dep_order_repo" value="&lt;&lt;uses&gt;&gt;" style="endArrow=open;dashed=1;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;dashed=1;" parent="1" source="class_order" target="class_orderrepo" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="732" as="sourcePoint" />
+            <mxPoint x="720" y="435" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Generalization: User -> Manager, Waiter, Chef, Cashier, Customer -->
+        <mxCell id="class_manager" value="Manager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="package_business" vertex="1">
+          <mxGeometry x="20" y="1180" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gen_user_manager" value="" style="endArrow=block;endSize=16;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" source="class_user" target="class_manager" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="360" as="sourcePoint" />
+            <mxPoint x="110" y="1180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="class_waiter" value="Waiter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="package_business" vertex="1">
+          <mxGeometry x="220" y="1180" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gen_user_waiter" value="" style="endArrow=block;endSize=16;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" source="class_user" target="class_waiter" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="360" as="sourcePoint" />
+            <mxPoint x="310" y="1180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="class_chef" value="Chef" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="package_business" vertex="1">
+          <mxGeometry x="420" y="1180" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gen_user_chef" value="" style="endArrow=block;endSize=16;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" source="class_user" target="class_chef" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="360" as="sourcePoint" />
+            <mxPoint x="500" y="1180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+
